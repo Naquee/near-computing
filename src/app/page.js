@@ -26,66 +26,13 @@ import LandingCard from "./components/LandingCard";
 import { useState } from "react";
 import CommingSoon from "./components/CommingSoon";
 
-// import rent from "./services/rent";
-
-// const products = [
-//   {
-//     id: 1,
-//     name: "Latops",
-//     img: "https://images.unsplash.com/photo-1602080858428-57174f9431cf?q=80&w=1551&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-//     deescription:
-//       "Laptops on Rent offers the best computer rental deals and speedy delivery for all types of important projects in Delhi, Gurgaon, Noida, Mohali, and Chandigarh. We have been providing Computers for rent, since the company’s inception.",
-//     btn: "Read More",
-//   },
-//   {
-//     id: 1,
-//     name: "Desktop",
-//     img: "https://images.unsplash.com/photo-1602080858428-57174f9431cf?q=80&w=1551&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-//     deescription:
-//       "Laptops on Rent offers the best computer rental deals and speedy delivery for all types of important projects in Delhi, Gurgaon, Noida, Mohali, and Chandigarh. We have been providing Computers for rent, since the company’s inception.",
-//     btn: "Read More",
-//   },
-//   {
-//     id: 1,
-//     name: "Mac Book",
-//     img: "https://images.unsplash.com/photo-1602080858428-57174f9431cf?q=80&w=1551&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-//     deescription:
-//       "Laptops on Rent offers the best computer rental deals and speedy delivery for all types of important projects in Delhi, Gurgaon, Noida, Mohali, and Chandigarh. We have been providing Computers for rent, since the company’s inception.",
-//     btn: "Read More",
-//   },
-//   {
-//     id: 1,
-//     name: "Server",
-//     img: "https://images.unsplash.com/photo-1602080858428-57174f9431cf?q=80&w=1551&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-//     deescription:
-//       "Laptops on Rent offers the best computer rental deals and speedy delivery for all types of important projects in Delhi, Gurgaon, Noida, Mohali, and Chandigarh. We have been providing Computers for rent, since the company’s inception.",
-//     btn: "Read More",
-//   },
-//   {
-//     id: 1,
-//     name: "Printer",
-//     img: "https://images.unsplash.com/photo-1602080858428-57174f9431cf?q=80&w=1551&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-//     deescription:
-//       "Laptops on Rent offers the best computer rental deals and speedy delivery for all types of important projects in Delhi, Gurgaon, Noida, Mohali, and Chandigarh. We have been providing Computers for rent, since the company’s inception.",
-//     btn: "Read More",
-//   },
-//   {
-//     id: 1,
-//     name: "UPS ON RENT",
-//     img: "https://images.unsplash.com/photo-1602080858428-57174f9431cf?q=80&w=1551&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-//     deescription:
-//       "Laptops on Rent offers the best computer rental deals and speedy delivery for all types of important projects in Delhi, Gurgaon, Noida, Mohali, and Chandigarh. We have been providing Computers for rent, since the company’s inception.",
-//     btn: "Read More",
-//   },
-// ];
-
 export default function Home() {
   // console.log("rent", rent);
   return (
     <main>
       <Box mt="3rem">
 
-      <CommingSoon/>
+      {/* <CommingSoon/> */}
 
 
 
