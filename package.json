@@ -1,5 +1,5 @@
 {
-  "name": "near-computing",
+  "name": "rental_laptop",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,12 +9,20 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@chakra-ui/icons": "^2.1.1",
+    "@chakra-ui/react": "^2.8.2",
+    "@emailjs/browser": "^3.11.0",
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "framer-motion": "^10.16.16",
+    "next": "14.0.3",
     "react": "^18",
     "react-dom": "^18",
-    "next": "14.0.4"
+    "react-icons": "^4.12.0",
+    "swiper": "^11.0.5"
   },
   "devDependencies": {
     "eslint": "^8",
-    "eslint-config-next": "14.0.4"
+    "eslint-config-next": "14.0.3"
   }
 }
