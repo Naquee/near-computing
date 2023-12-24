@@ -8,9 +8,8 @@ import React, { useMemo } from "react";
 
 const InnerDetails = () => {
   const { innerDetailsId } = useParams();
-  //   const { innerId } = router.query;
-  //   console.log("InnerId", innerId);
-  console.log("InnerId", innerDetailsId);
+
+  // console.log("InnerId", innerDetailsId);
 
   const [innterDetails] = useMemo(
     () => rent.filter((innerElm) => innerElm.id === Number(innerDetailsId)),

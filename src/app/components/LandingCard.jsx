@@ -7,7 +7,7 @@ import WhatssApp from "./WhatssApp";
 
 const LandingCard = () => {
   return (
-    <Box border="1px solid red" >
+    <Box>
       <Box bg="#2d2a2b">
         <Image src={hsc} alt="carasole" objectFit="cover" />
       </Box>
@@ -27,7 +27,7 @@ const LandingCard = () => {
         <TopHeading headings="Our Service" />
         <Text>
           Unlock the power of seamless productivity with our laptop rental
-          services. Whether you're a student in need of a temporary setup or a
+          services. Whether you are a student in need of a temporary setup or a
           professional on the go, our diverse range of high-performance laptops
           ensures you have the right tool for every task. Experience the latest
           technology without the commitment of ownership – rent a laptop

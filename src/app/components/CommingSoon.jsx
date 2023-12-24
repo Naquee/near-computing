@@ -1,17 +1,14 @@
+"use client"
 import {
   Box,
-  Button,
   Center,
-  Divider,
   Heading,
   IconButton,
-  useDisclosure,
 } from "@chakra-ui/react";
 import React, { useEffect, useState } from "react";
 import { CloseIcon } from "@chakra-ui/icons";
 
 const CommingSoon = () => {
-  const { isOpen, onOpen, onClose } = useDisclosure();
   const [timeRemaining, setTimeRemaining] = useState(calculateTimeRemaining());
 
   useEffect(() => {
@@ -41,19 +38,12 @@ const CommingSoon = () => {
 
     return { days, hours, minutes, seconds };
   }
-  const finalRef = React.useRef(null);
-  const [close, setClose] = useState(true);
-  console.log("close", close);
-  const handleOpen = () => {
-    setClose(!close);
-  };
-
   return (
     <>
       {close ? (
         <Box
           pos="fixed"
-          top={{ base: "5rem", md: "2rem" }}
+          top={{ base: "3rem", md: "2rem" }}
           w="100%"
           zIndex="10"
           transitionDuration="200ms"
@@ -89,7 +79,6 @@ const CommingSoon = () => {
                 as="h3"
                 size={{ base: "md", md: "2xl" }}
                 noOfLines={1}
-                p="2rem"
                 color="white"
               >{`${timeRemaining.days} days, ${timeRemaining.hours} hours, ${timeRemaining.minutes} minutes, ${timeRemaining.seconds} seconds`}</Heading>
             </Center>

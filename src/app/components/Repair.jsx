@@ -1,4 +1,3 @@
-import { Box } from "@chakra-ui/react";
 import React from "react";
 import laptop from "../assets/laptop.jpg";
 import {
@@ -14,6 +13,8 @@ import {
   Button,
   SimpleGrid,
 } from "@chakra-ui/react";
+import TopHeading from "./TopHeading";
+import Image from "next/image";
 
 const serverice = [
   {

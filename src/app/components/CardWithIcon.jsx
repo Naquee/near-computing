@@ -10,7 +10,7 @@ const CardWithIcon = () => {
       bgColor={item.bgcolor}
       color={item.color}
       p={p}
-      borderRadius="lg"
+      // borderRadius="lg"
       mt={mt}
       
     >
