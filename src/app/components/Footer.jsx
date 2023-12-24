@@ -4,7 +4,6 @@ import { BsFacebook, BsInstagram, BsLinkedin } from "react-icons/bs";
 import Link from "next/link";
 
 const Footer = () => {
-//   const navigate = useNavigate();
   return (
     <Box w="100%" bg="#292d33" mt="2rem">
       <Flex
