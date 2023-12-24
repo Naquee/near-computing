@@ -1,12 +1,7 @@
 import { Box, Center, Divider, Flex, Image, Text } from "@chakra-ui/react";
 import React from "react";
-// import logonav from "../assets/icons/logonav.png";
-import SubHeading from "./SubHeading";
-// import { Link, useNavigate } from "react-router-dom";
 import { BsFacebook, BsInstagram, BsLinkedin } from "react-icons/bs";
-import { FONT } from "@/constants/colors";
 import Link from "next/link";
-import Subheading from "./SubHeading";
 
 const Footer = () => {
 //   const navigate = useNavigate();
