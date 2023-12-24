@@ -84,25 +84,74 @@ const DataRecovery = () => {
           );
         })}
       </Box>
-      <Box p="1rem" w={{ base: "100%", md: "70%" }} m="auto" >
+      <Box p="1rem" w={{ base: "100%", md: "70%" }} m="auto">
         <Heading p="0.25rem" as="h4" size="md" textDecoration="underline">
-        Why Choose us
+          Why Choose us
         </Heading>
-        <UnorderedList color="gray.600" mt="1rem" fontWeight="400" fontSize="20px">
-          <ListItem> <strong>Expert Team:</strong> Our certified data recovery professionals have years of experience and access to cutting-edge technology, ensuring the highest chances of successful data retrieval.</ListItem>
-          <ListItem> <strong>Confidentiality:</strong> We prioritize your privacy and maintain strict confidentiality throughout the recovery process, ensuring your data remains secure.</ListItem>
-          <ListItem> <strong>Confidentiality:</strong> We understand the urgency of data recovery. Our efficient processes aim to deliver your retrieved data promptly.</ListItem>
-          <ListItem> <strong>Transparent Pricing:</strong> We offer competitive and transparent pricing with no hidden fees. You'll know the cost upfront, ensuring peace of mind.</ListItem>
+        <UnorderedList
+          color="gray.600"
+          mt="1rem"
+          fontWeight="400"
+          fontSize="20px"
+        >
+          <ListItem>
+            {" "}
+            <strong>Expert Team:</strong> Our certified data recovery
+            professionals have years of experience and access to cutting-edge
+            technology, ensuring the highest chances of successful data
+            retrieval.
+          </ListItem>
+          <ListItem>
+            {" "}
+            <strong>Confidentiality:</strong> We prioritize your privacy and
+            maintain strict confidentiality throughout the recovery process,
+            ensuring your data remains secure.
+          </ListItem>
+          <ListItem>
+            {" "}
+            <strong>Confidentiality:</strong> We understand the urgency of data
+            recovery. Our efficient processes aim to deliver your retrieved data
+            promptly.
+          </ListItem>
+          <ListItem>
+            {" "}
+            <strong>Transparent Pricing:</strong> We offer competitive and
+            transparent pricing with no hidden fees. You'll know the cost
+            upfront, ensuring peace of mind.
+          </ListItem>
         </UnorderedList>
 
         <Heading p="0.25rem" as="h4" size="md" textDecoration="underline">
-        <br></br>Our Process
+          <br></br>Our Process
         </Heading>
-        <UnorderedList color="gray.600" mt="1rem" fontWeight="400" fontSize="20px">
-          <ListItem> <strong>Evaluation:</strong> Upon receiving your device, our team performs a comprehensive evaluation to assess the extent of data loss and provide you with a detailed report.</ListItem>
-          <ListItem> <strong>Recovery:</strong> Using state-of-the-art tools and techniques, we initiate the data recovery process, aiming to retrieve your lost information efficiently.</ListItem>
-          <ListItem> <strong>Verification:</strong> After successful data retrieval, we verify the recovered data to ensure its integrity and completeness.</ListItem>
-          <ListItem><strong>Delivery:</strong> Your recovered data is securely transferred to your preferred storage media, whether it's a new drive or cloud storage, and promptly delivered to you.</ListItem>
+        <UnorderedList
+          color="gray.600"
+          mt="1rem"
+          fontWeight="400"
+          fontSize="20px"
+        >
+          <ListItem>
+            {" "}
+            <strong>Evaluation:</strong> Upon receiving your device, our team
+            performs a comprehensive evaluation to assess the extent of data
+            loss and provide you with a detailed report.
+          </ListItem>
+          <ListItem>
+            {" "}
+            <strong>Recovery:</strong> Using state-of-the-art tools and
+            techniques, we initiate the data recovery process, aiming to
+            retrieve your lost information efficiently.
+          </ListItem>
+          <ListItem>
+            {" "}
+            <strong>Verification:</strong> After successful data retrieval, we
+            verify the recovered data to ensure its integrity and completeness.
+          </ListItem>
+          <ListItem>
+            <strong>Delivery:</strong> Your recovered data is securely
+            transferred to your preferred storage media, whether it's a new
+            drive or cloud storage, and promptly delivered to you.
+          </ListItem>
         </UnorderedList>
       </Box>
       <Footer />
