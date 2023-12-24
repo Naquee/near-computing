@@ -11,7 +11,6 @@ const LandingCard = () => {
       <Box bg="#2d2a2b">
         <Image src={hsc} alt="carasole" objectFit="cover" />
       </Box>
-
       <Card
         w={["100%", "40%"]}
         pos={["static", "absolute"]}
@@ -19,13 +18,13 @@ const LandingCard = () => {
         left={["0","58%"]}
         color={["black", "white"]}
         fontSize={["16px", "20px"]}
-        bg="rgba(255, 255, 255, 0.5)"
+        background="rgba(0, 136, 255, 0.5)"
         p={["0", "2rem"]}
-        // mt={["1rem", "0rem"]}
+        mt={["1rem", "0rem"]}
         shadow="lg"
       >
         <TopHeading headings="Our Service" />
-        <Text>
+        <Text p={["1.5","0"]}>
           Unlock the power of seamless productivity with our laptop rental
           services. Whether you are a student in need of a temporary setup or a
           professional on the go, our diverse range of high-performance laptops
