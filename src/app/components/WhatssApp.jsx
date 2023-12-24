@@ -4,9 +4,15 @@ import React from 'react'
 import whatsapp from "../../assets/whatsapp.svg"
 
 const WhatssApp = ({bgColor}) => {
+  const handleButtonClick = () => {
+    const phoneNumber = '7050800356'; // Replace with the desired phone number
+    const message = 'Hey i have query'; // Replace with your default message
+    const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    window.open(whatsappLink, '_blank');
+};
   return (
-    <Box bg={bgColor}>
-    <Card maxW='sm'>
+    <Box>
+    <Card maxW='sm' backgroundColor={bgColor}>
   <CardBody>
     <Stack mt='0' spacing='3'>
       <Heading size='md'>Quick Response</Heading>
@@ -16,7 +22,7 @@ const WhatssApp = ({bgColor}) => {
     </Stack>
   </CardBody>
   <Divider />
-  <CardFooter cursor="pointer">
+  <CardFooter cursor="pointer" onClick={handleButtonClick}>
       <Image src={whatsapp} alt='whatsapp'/>
   </CardFooter>
 </Card>

@@ -17,7 +17,7 @@ import React from "react";
 import laptop from "../../Mobile/l2.jpg";
 import Footer from "@/app/components/Footer";
 const parag =
-  "At [Your Company Name], we recognize the significance of keeping your devices updated and operating at their best. Our Software Update and Format services are designed to enhance the performance, security, and longevity of your devices.";
+  "At Near Computing, we recognize the significance of keeping your devices updated and operating at their best. Our Software Update and Format services are designed to enhance the performance, security, and longevity of your devices.";
 
 let softwareupdate = [
   {
@@ -38,8 +38,7 @@ let softwareupdate = [
 
   {
     head: "Firmware Updates:",
-    title:
-      "Update device firmware for stability and enhanced performance.",
+    title: "Update device firmware for stability and enhanced performance.",
   },
   {
     head: "Operating System Reinstallation",
@@ -58,7 +57,7 @@ const SoftWareUpdate = () => {
     <Box mt="4rem">
       <TopHeading headings="SoftWare Update and Formate" />
       <Box width={{ base: "100%", md: "70%" }} m="auto">
-        <Subheading subheading="Welcome to [Your Company Name] – Empowering Your Devices with Optimized Software and Fresh Starts" />
+        <Subheading subheading="Welcome to Near Computing – Empowering Your Devices with Optimized Software and Fresh Starts" />
         <Flex justifyContent="center">
           <Paragraph width={{ base: "95%", md: "90%" }} para={parag} />
         </Flex>
@@ -78,15 +77,39 @@ const SoftWareUpdate = () => {
           );
         })}
       </Box>
-      <Box p="1rem" w={{ base: "100%", md: "70%" }} m="auto" >
+      <Box p="1rem" w={{ base: "100%", md: "70%" }} m="auto">
         <Heading p="0.25rem" as="h4" size="md" textDecoration="underline">
-        Why Choose us
+          Why Choose us
         </Heading>
-        <UnorderedList color="gray.600" mt="1rem" fontWeight="400" fontSize="20px">
-          <ListItem> <strong>Expert Technicians:</strong>Our skilled technicians are proficient in software updates, formatting, and device optimization across various platforms and devices.</ListItem>
-          <ListItem> <strong>Personalized Approach:</strong>We understand that each device is unique. Our services are tailored to meet your specific requirements.</ListItem>
-          <ListItem> <strong>Thorough Processes:</strong>We ensure meticulous attention to detail during updates and formatting, ensuring a seamless experience.</ListItem>
-          <ListItem> <strong>Continued Support:</strong> e provide post-service support and guidance to ensure your devices maintain peak performance.</ListItem>
+        <UnorderedList
+          color="gray.600"
+          mt="1rem"
+          fontWeight="400"
+          fontSize="20px"
+        >
+          <ListItem>
+            {" "}
+            <strong>Expert Technicians:</strong>Our skilled technicians are
+            proficient in software updates, formatting, and device optimization
+            across various platforms and devices.
+          </ListItem>
+          <ListItem>
+            {" "}
+            <strong>Personalized Approach:</strong>We understand that each
+            device is unique. Our services are tailored to meet your specific
+            requirements.
+          </ListItem>
+          <ListItem>
+            {" "}
+            <strong>Thorough Processes:</strong>We ensure meticulous attention
+            to detail during updates and formatting, ensuring a seamless
+            experience.
+          </ListItem>
+          <ListItem>
+            {" "}
+            <strong>Continued Support:</strong> e provide post-service support
+            and guidance to ensure your devices maintain peak performance.
+          </ListItem>
         </UnorderedList>
       </Box>
       <Footer />

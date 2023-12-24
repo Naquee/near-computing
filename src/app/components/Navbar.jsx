@@ -62,7 +62,11 @@ const Navbar = ({ color = "blue" }) => {
         },
         {
           itemName: "Repair",
-          url: "./page/repair/page",
+          url: "./page/repair",
+        },
+        {
+          itemName: "Rental Services",
+          url: "page/laptop-rental",
         },
         {
           itemName: "About Us",
@@ -72,10 +76,7 @@ const Navbar = ({ color = "blue" }) => {
         //   itemName: "Management",
         //   url: "/about-us/management",
         // },
-        {
-          itemName: "Term And Condition",
-          url: "#",
-        },
+      
       
       ],
     },

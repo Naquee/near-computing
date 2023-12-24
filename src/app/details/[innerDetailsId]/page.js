@@ -1,4 +1,5 @@
 "use client";
+import Footer from "@/app/components/Footer";
 import TopHeading from "@/app/components/TopHeading";
 import { rent } from "@/app/services/api";
 import { Box, Card, Flex, Heading, Text } from "@chakra-ui/react";
@@ -9,7 +10,7 @@ import React, { useMemo } from "react";
 const InnerDetails = () => {
   const { innerDetailsId } = useParams();
 
-  // console.log("InnerId", innerDetailsId);
+  console.log("InnerId", innerDetailsId);
 
   const [innterDetails] = useMemo(
     () => rent.filter((innerElm) => innerElm.id === Number(innerDetailsId)),
@@ -62,6 +63,7 @@ const InnerDetails = () => {
           ></Box>
         </Box>
       </Box>
+      <Footer/>
 
    
     </Box>

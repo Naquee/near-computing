@@ -1,8 +1,9 @@
-import { Center, Heading, keyframes } from "@chakra-ui/react";
+import { Center, Heading, keyframes,Divider } from "@chakra-ui/react";
 import React from "react";
 import { motion } from "framer-motion";
+import { COLORS } from "@/constants/colors";
 
-const TopHeading = ({ headings }) => {
+const TopHeading = ({ headings,color }) => {
   const animationKeyframes = keyframes`
   10% { transform: scale(2); }
   100% { transform: scale(1); }`;
@@ -18,15 +19,13 @@ const TopHeading = ({ headings }) => {
         width={{ base: "95%", md: "100%" }}
         m="auto"
         p="1rem"
-        bg="#5b5bbf"
-        color="#ffffff"
-        shadow="md"
-        rounded="lg"
+        color={COLORS.Navi || color}
       >
         <Heading size={{ base: "md", md: "xl" }} letterSpacing="1px">
           {headings}
         </Heading>
       </Center>
+      <Divider p={["0","1rem"]}/>
     </motion.div>
   );
 };

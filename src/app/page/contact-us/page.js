@@ -191,7 +191,7 @@ const ContactUs = () => {
       >
         {/* <Flex color="white" justifyContent="flex-end" bg="white"> */}
         <Box float="right" p="3rem">
-          <WhatssApp />
+          <WhatssApp bgColor="white"/>
         </Box>
         {/* </Flex> */}
 

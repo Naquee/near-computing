@@ -1,11 +1,20 @@
-import { Box, Button, ButtonGroup, Card, CardFooter, Flex, Text } from "@chakra-ui/react";
+import { Box, Divider, Heading, Card, keyframes, Center, Text } from "@chakra-ui/react";
 import React from "react";
 import hsc from "../../assets/hsc11.jpg";
 import Image from "next/image";
 import TopHeading from "./TopHeading";
 import WhatssApp from "./WhatssApp";
+import { COLORS } from "@/constants/colors";
+import { motion } from "framer-motion";
+
 
 const LandingCard = () => {
+
+  const animationKeyframes = keyframes`
+  10% { transform: scale(2); }
+  100% { transform: scale(1); }`;
+
+  const animation = `${animationKeyframes} 1.5s ease-in-out 1`;
   return (
     <Box>
       <Box bg="#2d2a2b">
@@ -23,7 +32,23 @@ const LandingCard = () => {
         mt={["1rem", "0rem"]}
         shadow="lg"
       >
-        <TopHeading headings="Our Service" />
+      <motion.div
+      animate={animation}
+      transition={{ ease: "easeOut", duration: 2 }}
+    >
+      <Center
+        width={{ base: "95%", md: "100%" }}
+        m="auto"
+        color={COLORS.white}
+      >
+        <Heading size={{ base: "md", md: "xl" }} letterSpacing="1px">
+        Our Service
+        </Heading>
+      </Center>
+      <Divider p={["0","1rem"]}/>
+    </motion.div>
+
+        {/* <TopHeading color={COLORS.white} headings="Our Service" /> */}
         <Text p={["1.5","0"]}>
           Unlock the power of seamless productivity with our laptop rental
           services. Whether you are a student in need of a temporary setup or a

@@ -55,7 +55,7 @@ let lapiservice = [
 const MobileReapir = () => {
   return (
     <Box mt="4rem">
-      <TopHeading headings="Laptop Services Repair" />
+      <TopHeading headings="Laptop Repair Services" />
       <Box width={{ base: "100%", md: "70%" }} m="auto">
         <Subheading subheading="Welcome to Our Expert Laptop Service Center!" />
         <Flex justifyContent="center">
