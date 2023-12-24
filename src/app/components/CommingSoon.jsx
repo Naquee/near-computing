@@ -7,6 +7,7 @@ import {
 } from "@chakra-ui/react";
 import React, { useEffect, useState } from "react";
 import { CloseIcon } from "@chakra-ui/icons";
+import ReactDOMServer from 'react-dom/server';
 
 const CommingSoon = () => {
   const [timeRemaining, setTimeRemaining] = useState(calculateTimeRemaining());
@@ -22,25 +23,21 @@ const CommingSoon = () => {
   function calculateTimeRemaining() {
     const now = new Date();
     const targetDate = new Date(now);
-    targetDate.setDate(now.getDate() + 3);
+    targetDate.setDate(now.getDate() + 2);
     targetDate.setHours(0, 0, 0, 0);
 
     const timeDifference = targetDate.getTime() - now.getTime();
 
     const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
-    const hours = Math.floor(
-      (timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-    );
-    const minutes = Math.floor(
-      (timeDifference % (1000 * 60 * 60)) / (1000 * 60)
-    );
+    const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
     const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
 
     return { days, hours, minutes, seconds };
   }
+
   return (
     <>
-      {close ? (
         <Box
           pos="fixed"
           top={{ base: "3rem", md: "2rem" }}
@@ -80,13 +77,13 @@ const CommingSoon = () => {
                 size={{ base: "md", md: "2xl" }}
                 noOfLines={1}
                 color="white"
-              >{`${timeRemaining.days} days, ${timeRemaining.hours} hours, ${timeRemaining.minutes} minutes, ${timeRemaining.seconds} seconds`}</Heading>
+              >{`${timeRemaining.days} days, ${timeRemaining.hours} hours, ${timeRemaining.minutes} minutes, ${timeRemaining.seconds} seconds`}
+              </Heading>
             </Center>
           </Box>
         </Box>
-      ) : null}
     </>
   );
-};
+}
 
 export default CommingSoon;

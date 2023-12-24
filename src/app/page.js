@@ -24,14 +24,13 @@ import Link from "next/link";
 import Carasole from "./components/Carasole";
 import LandingCard from "./components/LandingCard";
 import { useState } from "react";
-import CommingSoon from "./components/CommingSoon";
 
 export default function Home() {
   // console.log("rent", rent);
   return (
     <main>
       <Box mt="3rem">
-      <CommingSoon/>
+      {/* <CommingSoon/> */}
       {/* <Carasole/> */}
       <LandingCard/>
         <Box>
