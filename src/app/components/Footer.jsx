@@ -8,7 +8,7 @@ import whatsapp from "../../assets/whatsapp_icon.svg"
 const Footer = () => {
 
   const handleButtonClick = () => {
-    const phoneNumber = '7050800356'; // Replace with the desired phone number
+    const phoneNumber = '9871608330'; // Replace with the desired phone number
     const message = 'Hey i have query'; // Replace with your default message
     const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappLink, '_blank');
