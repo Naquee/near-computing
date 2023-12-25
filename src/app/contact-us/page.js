@@ -103,13 +103,13 @@ const ContactUs = () => {
                 </Stack>
               </HStack>
               <Text m="0.5rem 0 0 3rem" fontSize="18px">
-                8962241451
+                9871608330
               </Text>
             </a>
           </Box>
 
           <Box>
-            <a href="mailto:naqueealam99@gmail.com">
+            <a href="mailto:info@nearcomputing.in">
               <HStack gap="1rem">
                 <Stack fontSize="25px">
                   <MdOutlineMail />
@@ -121,13 +121,13 @@ const ContactUs = () => {
                 </Stack>
               </HStack>
               <Text m="0.5rem 0 0 3rem" fontSize="18px">
-                naqueealam99@gmail.com
+              info@nearcomputing.in
               </Text>
             </a>
           </Box>
 
           <Box>
-            <a href="tel:8962241451">
+            <a href="https://maps.app.goo.gl/awmTRiGJChphwbUs5" target="_blank">
               <HStack gap="1rem">
                 <Stack fontSize="25px">
                   <CiLocationOn />
@@ -139,7 +139,7 @@ const ContactUs = () => {
                 </Stack>
               </HStack>
               <Text m="0.5rem 0 0 3rem" fontSize="18px">
-                121 Rock Sreet, 21 Avenue, New York, NY 92103-9000
+                Ashoka Bhawan Nehru Place New Delhi (110019)
               </Text>
             </a>
           </Box>
@@ -165,7 +165,7 @@ const ContactUs = () => {
       <Box
         w="100%"
         h={["0", "20rem"]}
-        border="1px solid red"
+        border="1px solid blue"
         mt={["0", "-29rem"]}
         bg="#154973"
       >

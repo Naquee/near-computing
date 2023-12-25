@@ -155,7 +155,7 @@ const Navbar = () => {
         finalFocusRef={btnRef}
       >
         <DrawerOverlay />
-        <DrawerContent flexDir="column">
+        <DrawerContent flexDir="column" >
           <DrawerCloseButton />
           <Box
             pr="2rem"

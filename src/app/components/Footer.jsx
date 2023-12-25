@@ -67,10 +67,10 @@ const Footer = () => {
             fontSize="18px"
           >
             <Text>
+              <a href="tel:9874563217">
               <Text fontWeight="bold" as="span">
-                Call : (+91)
-              </Text>{" "}
-              <a href="tel:9874563217"> </a>
+                Call : (+91)  9871608330
+              </Text> </a>
             </Text>
             <Text>
               {" "}
@@ -84,7 +84,7 @@ const Footer = () => {
             <Text fontWeight="bold" as="span">
               Address :{" "}
             </Text>
-            Nehru Place New Delhi (110019) India
+            Ashoka Bhawan Nehru Place New Delhi (110019) India
           </Text>
         </Box>
         <Box
@@ -105,21 +105,21 @@ const Footer = () => {
             <Image src={whatsapp} alt='whatsapp'/>
             </Box>
             <a
-              href="https://www.linkedin.com/in/dr-tariq-ortho-basti-86a7a8154/?originalSubdomain=in"
+              href="https://www.linkedin.com/in/naquee-alam/"
               target="_blank"
               rel="noopener noreferrer"
             >
               <BsLinkedin />
             </a>
             <a
-              href="https://www.facebook.com/hajrahospitalbasti/"
+              href="https://www.facebook.com/profile.php?id=100010178952931"
               target="_blank"
               rel="noopener noreferrer"
             >
               <BsFacebook />
             </a>
             <a
-              href="https://www.instagram.com/__hajra__hospital__/"
+              href="https://www.instagram.com/naqueealam/"
               target="_blank"
               rel="noopener noreferrer"
             >
