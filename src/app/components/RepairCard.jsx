@@ -1,10 +1,6 @@
 
 "use client";
 import React from "react";
-// import {laptop} from ".../../../src/assets/laptop.jpg"
-// import repair from ".../../../public/repair.jpg";
-// import repair from "../../../assets/repair.jpg";
-
 import {
   Box,
   Card,
@@ -20,13 +16,11 @@ import {
 } from "@chakra-ui/react";
 import TopHeading from "@/app/components/TopHeading";
 import Image from "next/image";
-import { MdMobileOff } from "react-icons/md";
 import { motion } from "framer-motion";
 import { useRouter } from "next/navigation";
-import mobilerepair from "../../assets/repairPhoto/mobile.jpg";
+import dataRecovery from "../../assets/repair-service/data-recovery.jpg";
 import laptoRepair from "../../assets/repairPhoto/laptop.jpg";
 import software from "../../assets/repairPhoto/software.jpg";
-import Footer from "@/app/components/Footer";
 
 const serverice = [
   {
@@ -35,14 +29,14 @@ const serverice = [
     //   image: laptop,
     ImageUrl: laptoRepair,
     deescription: "  At our laptop service center, we understand the importance of your laptop in your daily life,",
-    link: "page/laptop-repair",
+    link: "laptop-repair",
   },
   {
     id: 2,
     name: "Data Recovery",
-    ImageUrl: mobilerepair,
+    ImageUrl: dataRecovery,
     deescription: "  We specialize in professional data recovery services for individuals, businesses, and organizations.",
-    link: "page/data-recovery",
+    link: "data-recovery",
   },
 
   {
@@ -51,7 +45,7 @@ const serverice = [
     //   image: laptop,
     ImageUrl: software,
     deescription: " we recognize the significance of keeping your devices updated and operating at their best,",
-    link: "page/softWare-update-and-formate",
+    link: "softWare-update-and-formate",
   },
 ];
 
@@ -82,6 +76,8 @@ const RepairCard = () => {
                 rounded="lg"
                 boxShadow="outline"
                 p="6"
+                onClick={() => router.push(`/${item.link}`)}
+                cursor="pointer"
               >
                 <CardBody>
                   <Image
@@ -103,7 +99,6 @@ const RepairCard = () => {
                     <Button
                       variant="solid"
                       colorScheme="blue"
-                      onClick={() => router.push(`/${item.link}`)}
                     >
                       Read More...
                     </Button>

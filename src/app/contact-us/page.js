@@ -22,31 +22,11 @@ import { CiLocationOn } from "react-icons/ci";
 import { BsClock } from "react-icons/bs";
 import WhatssApp from "@/app/components/WhatssApp";
 import Footer from "@/app/components/Footer";
-import emailjs from "@emailjs/browser";
 
 const ContactUs = () => {
   const form = useRef();
 
-  const sendEmail = (e) => {
-    e.preventDefault();
 
-    emailjs
-      .sendForm(
-        "service_5ja1svt",
-        "template_e1kcvxm",
-        form.current,
-        "Rl9HrUu1eAYZZeqe6"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          console.log("suceess");
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
-  };
 
   return (
     <Box mt="4rem" w="100%">

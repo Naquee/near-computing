@@ -40,6 +40,7 @@ const LandingCard = () => {
         width={{ base: "95%", md: "100%" }}
         m="auto"
         color={COLORS.white}
+        p={["1rem","0"]}
       >
         <Heading size={{ base: "md", md: "xl" }} letterSpacing="1px">
         Our Service

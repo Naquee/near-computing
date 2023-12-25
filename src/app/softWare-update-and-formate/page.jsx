@@ -12,9 +12,8 @@ import {
 } from "@chakra-ui/react";
 import Image from "next/image";
 import React from "react";
-// import hardware from "../.../public/hardware.jpg";
-// import laptop from ".../assets/laptop.jpg"
-import laptop from "../../Mobile/l2.jpg";
+import software from "../../assets/repair-service/softwareUpdate.jpg";
+
 import Footer from "@/app/components/Footer";
 const parag =
   "At Near Computing, we recognize the significance of keeping your devices updated and operating at their best. Our Software Update and Format services are designed to enhance the performance, security, and longevity of your devices.";
@@ -63,7 +62,7 @@ const SoftWareUpdate = () => {
         </Flex>
 
         <TopHeading headings="Our Services:" />
-        <Image src={laptop} alt="laptop" width="full" />
+        <Image src={software} alt="laptop" width="full" />
         {/* <img src={""} alt="" /> */}
 
         {softwareupdate.map((item, index) => {

@@ -1,18 +1,15 @@
-import { Box, Flex } from '@chakra-ui/react'
-import Image from 'next/image'
-import React from 'react'
+import { Box, Flex } from "@chakra-ui/react";
+import Image from "next/image";
+import React from "react";
 
 const CardWithIcon = () => {
-//    const navigate = useNavigate();
   return (
     <Box
       width={{ base: "100%", md: width }}
       bgColor={item.bgcolor}
       color={item.color}
       p={p}
-      // borderRadius="lg"
       mt={mt}
-      
     >
       <Box
         fontSize={item?.fontSize}
@@ -23,7 +20,7 @@ const CardWithIcon = () => {
         justifyItems="center"
         flexFlow={flexFlow}
         flexDirection={column_reverse}
-        onClick={() => navigate(`/${item.navigate?item.navigate:""}`)}
+        onClick={() => navigate(`/${item.navigate ? item.navigate : ""}`)}
       >
         <Box>{item?.title}</Box>
         <Box mt="0.5rem" fontSize="18px">
@@ -35,7 +32,7 @@ const CardWithIcon = () => {
         </Flex>
       </Box>
     </Box>
-  )
-}
+  );
+};
 
-export default CardWithIcon
+export default CardWithIcon;

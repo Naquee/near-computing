@@ -12,9 +12,7 @@ import {
 } from "@chakra-ui/react";
 import Image from "next/image";
 import React from "react";
-// import hardware from "../.../public/hardware.jpg";
-// import laptop from ".../assets/laptop.jpg"
-import laptop from "../../Mobile/l2.jpg";
+import dataRecovery from "../../assets/repair-service/data-recovery.jpg"
 import Footer from "@/app/components/Footer";
 const parag =
   "Losing valuable data can be catastrophic. Whether it's personal memories or crucial business information, accidental deletion, hardware failure, or system crashes can lead to significant distress.We are understand the importance of your data and specialize in professional, reliable data recovery services tailored to meet your needs.";
@@ -70,7 +68,7 @@ const DataRecovery = () => {
         </Flex>
 
         <TopHeading headings="Our Services:" />
-        <Image src={laptop} alt="laptop" width="full" />
+        <Image src={dataRecovery} alt="laptop" width="full" />
         {/* <img src={""} alt="" /> */}
 
         {datarecovery.map((item, index) => {

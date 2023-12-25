@@ -1,13 +1,22 @@
-import { Box, Center, Divider, Flex, Image, Text } from "@chakra-ui/react";
+import { Box, Center, Divider, Flex, Text } from "@chakra-ui/react";
 import React from "react";
 import { BsFacebook, BsInstagram, BsLinkedin } from "react-icons/bs";
 import Link from "next/link";
-
+import NClogo from "../../assets/Nlogo.png";
+import Image from "next/image";
+import whatsapp from "../../assets/whatsapp_icon.svg"
 const Footer = () => {
+
+  const handleButtonClick = () => {
+    const phoneNumber = '7050800356'; // Replace with the desired phone number
+    const message = 'Hey i have query'; // Replace with your default message
+    const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    window.open(whatsappLink, '_blank');
+};
   return (
     <Box w="100%" bg="#292d33" mt="2rem">
       <Flex
-        w="80%"
+        w="90%"
         m="auto"
         gap="2rem"
         justifyContent="center"
@@ -16,16 +25,20 @@ const Footer = () => {
         pt={{ base: "3rem", md: "3rem" }}
         color="white"
       >
-         <Box
-          w={{ base: "100%", md: "20%" }}
+        <Box
+          w={{ base: "100%", md: "25%" }}
           px={["2rem", "1rem"]}
           textAlign="start"
         >
-         <Box>
-          <Text fontSize="25px">Ali Rental</Text>
-          <Text>Logo</Text>
-         </Box>
-
+          <Box>
+            <Text fontSize="20px">Near Computing</Text>
+            {/* <Text fontSize="20px"></Text> */}
+            <Box p="0.25rem">
+              <Link href="/">
+                <Image src={NClogo} alt="logo" />
+              </Link>
+            </Box>
+          </Box>
         </Box>
         <Box
           w={{ base: "100%", md: "20%" }}
@@ -64,33 +77,33 @@ const Footer = () => {
               <Text fontWeight="bold" as="span">
                 Email :
               </Text>
-              <a href="mailto:info@nearcomputing.in">
-              info@nearcomputing.in
-              </a>
+              <a href="mailto:info@nearcomputing.in">info@nearcomputing.in</a>
             </Text>
           </Flex>
           <Text mt="0.5rem" color="gray.300">
             <Text fontWeight="bold" as="span">
               Address :{" "}
             </Text>
-            Nehru Place New Delhi (110019)
-            India
+            Nehru Place New Delhi (110019) India
           </Text>
         </Box>
         <Box
-          w={{ base: "100%", md: "20%" }}
-          px={["2rem", "1rem"]}
+          w={{ base: "100%", md: "25%" }}
+          // px={["2rem", "1rem"]}
           textAlign="start"
         >
           <Text fontSize="25px">Social Media</Text>
           <Flex
-            width="60%"
+            width="90%"
             fontSize="30px"
             mt="1.5rem"
             gap="1.5rem"
-            justify="center"
+            // justify="center"
             color="gray.200"
           >
+           <Box  w="35px" h="35px" cursor="pointer" onClick={handleButtonClick}>
+            <Image src={whatsapp} alt='whatsapp'/>
+            </Box>
             <a
               href="https://www.linkedin.com/in/dr-tariq-ortho-basti-86a7a8154/?originalSubdomain=in"
               target="_blank"
@@ -112,10 +125,12 @@ const Footer = () => {
             >
               <BsInstagram />
             </a>
+           
+            {/* <WhatssApp/> */}
           </Flex>
         </Box>
       </Flex>
-      <Box w="80%" m="auto" fontSize="20px" fontWeight="bold">
+      <Box w="90%" m="auto" fontSize="20px" fontWeight="bold">
         <Divider border="2px solid gray.300" mt="1rem" />
       </Box>
       <Center
