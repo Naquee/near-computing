@@ -2,7 +2,6 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { ChakraProvider } from "@chakra-ui/react";
 import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -11,12 +10,17 @@ export const metadata = {
   description:
     "Welcome to Near Computing, your go-to destination for hassle-free laptop rentals! Whether you're a student gearing up for finals, a business professional attending a conference, or a traveler in need of a temporary workstation, we've got you covered. Discover the convenience of renting high-quality laptops for your short-term needs.",
   icons: {
-    icon: ["/favicon.ico?v=1"],
+    icon: ["/favicon.ico?v=4"],
     apple: ["/apple-touch-icon.png?v=4"],
     shortcut: ["/apple-touch-icon.png"],
   },
   mainfest: "/site.webmanifest",
 };
+
+<head>
+  <link rel="canonical" href="https://www.nearcomputing.in/" />
+  <link rel="icon" href="/favicon.ico" />
+</head>;
 
 export default function RootLayout({ children }) {
   return (
