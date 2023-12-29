@@ -46,6 +46,11 @@ const Navbar = () => {
       name: "Rental Services",
       url: "/laptop-rental",
     },
+    {
+      name: "Products Sell",
+      url: "/product-sell",
+    },
+    // product-sell
 
     // {
     //   name: "Our Services",

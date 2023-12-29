@@ -5,6 +5,27 @@ import desktop from "./photos/desktop.jpg";
 import printer from "./photos/printer.jpg";
 import server from "./photos/server.jpg";
 import ups from "./photos/ups.jpg";
+import apple from "./icons/apple.svg"
+import dell from "./icons/dell.svg"
+import hp from "./icons/hp.svg"
+import acer from "./icons/acer.svg"
+import lenovo from "./icons/lenovo.svg"
+import asus from "./icons/asus.svg"
+import samsung from "./icons/samsung.svg"
+import msi from "./icons/msi.png"
+import benq from "./icons/benq.png"
+import Zebronic from "./icons/Zebronic.png"
+import lg from "./icons/lg.svg"
+
+
+
+import usedLaptop from "./photos/usedLaptop1.jpg";
+import usedMonitor from "./photos/usedMonitor.jpg";
+import usedPc from "./photos/usedPc.jpg";
+
+
+
+
 
 const rent = [
   {
@@ -90,4 +111,172 @@ const rent = [
   },
 ];
 
-export { rent };
+const laptopsell = [
+  {
+    id:1,
+    title:"Apple",
+    description:"",
+    imgUrl:apple
+  
+  },
+
+  {
+    id:2,
+    title:"Dell",
+    description:"",
+    imgUrl:dell
+  },
+  {
+    id:3,
+    title:"HP",
+    description:"",
+    imgUrl:hp
+  },
+
+  {
+    id:4,
+    title:"MSI",
+    description:"",
+    imgUrl:msi
+  },
+  {
+    id:5,
+    title:"Acer",
+    description:"",
+    imgUrl:acer
+  },
+
+  {
+    id:6,
+    title:"Asus",
+    description:"",
+    imgUrl:asus
+  },
+
+  {
+    id:7,
+    title:"Lenovo",
+    description:"",
+    imgUrl:lenovo
+  },
+ 
+  {
+    id:11,
+    title:"Samsung",
+    description:"",
+    imgUrl:samsung
+  },
+  
+];
+
+const Monitor = [
+  {
+    id:1,
+    title:"Apple",
+    description:"",
+    imgUrl:apple
+  },
+  {
+    id:2,
+    title:"Samsung",
+    description:"",
+    imgUrl:samsung
+  },
+  {
+    id:3,
+    title:"LG",
+    description:"",
+    imgUrl:lg
+  },
+
+  {
+    id:4,
+    title:"Acer",
+    description:"",
+    imgUrl:acer
+  },
+  {
+    id:5,
+    title:"Asus",
+    description:"",
+    imgUrl:asus
+  },
+  {
+    id:6,
+    title:"DELL",
+    description:"",
+    imgUrl:dell
+  },
+  {
+    id:7,
+    title:"HP",
+    description:"",
+    imgUrl:hp
+  },
+  {
+    id:8,
+    title:"BenQ",
+    description:"",
+    imgUrl:benq
+  },
+  {
+    id:9,
+    title:"Lenovo",
+    description:"",
+    imgUrl:lenovo
+
+  },
+  {
+    id:10,
+    title:"Zebronics",
+    description:"",
+    imgUrl:Zebronic
+  },
+  
+];
+
+const CPU = [
+  {
+    id:1,
+    title:"Gaming PC ",
+    description:"",
+    imgUrl:apple
+  },
+
+  {
+    id:1,
+    title:"Normal PC",
+    description:"",
+    imgUrl:apple
+  },
+
+  {
+    id:1,
+    title:"High Performance PC",
+    description:"",
+    imgUrl:apple
+  },
+];
+
+const productsell = [
+  {
+    id:1,
+    title:"Used Laptop",
+    description:"Are you in the market for a reliable laptop that won't break the bank? Look no further! Our collection of high-quality, certified used laptops offers the perfect solution for budget-conscious individuals seeking top-notch performance without compromising on reliability.",
+    imgUrl:usedLaptop
+  },
+  {
+    id:2,
+    title:"Used Monitor",
+    description:"Welcome to our online marketplace, where we bring you a curated selection of certified used monitors to redefine your visual experience without breaking the bank. Discover the perfect blend of affordability and performance explore our diverse range of high-quality displays.",
+    imgUrl:usedMonitor
+  },
+  {
+    id:3,
+    title:"Build Your PC",
+    description:"Building your own PC offers unmatched customization, performance, and the satisfaction of bringing your vision to life. Dive into a world of endless possibilities and create a machine that perfectly aligns with your passions, whether it's conquering the latest games, content creation.",
+    imgUrl:usedPc
+  },
+]
+
+export { rent,laptopsell ,Monitor,CPU,productsell};

@@ -8,9 +8,12 @@ import Footer from "./components/Footer";
 import LandingCard from "./components/LandingCard";
 import LaptoRentalCard from "./components/LaptopRentalCard";
 import RepairCard from "./components/RepairCard";
+import { laptopsell } from "./services/api";
+import UsedLaptop from "./components/UsedLaptop";
 
 export default function Home() {
   // console.log("rent", rent);
+
   return (
     <main>
       <Box mt="3rem">
@@ -18,6 +21,7 @@ export default function Home() {
         {/* <Carasole/> */}
         <LandingCard />
         <LaptoRentalCard />
+        <UsedLaptop/>
         <RepairCard />
         <Footer />
       </Box>

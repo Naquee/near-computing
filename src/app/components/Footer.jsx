@@ -4,15 +4,16 @@ import { BsFacebook, BsInstagram, BsLinkedin } from "react-icons/bs";
 import Link from "next/link";
 import NClogo from "../../assets/Nlogo.png";
 import Image from "next/image";
-import whatsapp from "../../assets/whatsapp_icon.svg"
+import whatsapp from "../../assets/whatsapp_icon.svg";
 const Footer = () => {
-
   const handleButtonClick = () => {
-    const phoneNumber = '9871608330'; // Replace with the desired phone number
-    const message = 'Hey i have query'; // Replace with your default message
-    const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
-    window.open(whatsappLink, '_blank');
-};
+    const phoneNumber = "9871608330"; // Replace with the desired phone number
+    const message = "Hey i have query"; // Replace with your default message
+    const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+      message
+    )}`;
+    window.open(whatsappLink, "_blank");
+  };
   return (
     <Box w="100%" bg="#292d33" mt="2rem">
       <Flex
@@ -68,9 +69,10 @@ const Footer = () => {
           >
             <Text>
               <a href="tel:9874563217">
-              <Text fontWeight="bold" as="span">
-                Call : (+91)  9871608330
-              </Text> </a>
+                <Text fontWeight="bold" as="span">
+                  Call : (+91) 9871608330
+                </Text>{" "}
+              </a>
             </Text>
             <Text>
               {" "}
@@ -101,8 +103,8 @@ const Footer = () => {
             // justify="center"
             color="gray.200"
           >
-           <Box  w="35px" h="35px" cursor="pointer" onClick={handleButtonClick}>
-            <Image src={whatsapp} alt='whatsapp'/>
+            <Box w="35px" h="35px" cursor="pointer" onClick={handleButtonClick}>
+              <Image src={whatsapp} alt="whatsapp" />
             </Box>
             <a
               href="https://www.linkedin.com/in/naquee-alam/"
@@ -111,21 +113,17 @@ const Footer = () => {
             >
               <BsLinkedin />
             </a>
-            <a
-              href="https://www.facebook.com/profile.php?id=100010178952931"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <a href="#" target="_blank" rel="noopener noreferrer">
               <BsFacebook />
             </a>
             <a
-              href="https://www.instagram.com/naqueealam/"
+              href="https://www.instagram.com/aliitservices?igsh=ZjA3NGRoeGVnbjZv"
               target="_blank"
               rel="noopener noreferrer"
             >
               <BsInstagram />
             </a>
-           
+
             {/* <WhatssApp/> */}
           </Flex>
         </Box>

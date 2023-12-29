@@ -17,7 +17,7 @@ const TopHeading = ({ headings,color }) => {
     >
       <Center
         width={{ base: "95%", md: "100%" }}
-        m="auto"
+        // m="auto"
         p="1rem"
         color={COLORS.Navi || color}
       >
@@ -25,7 +25,7 @@ const TopHeading = ({ headings,color }) => {
           {headings}
         </Heading>
       </Center>
-      <Divider p={["0","1rem"]}/>
+      <Divider/>
     </motion.div>
   );
 };
