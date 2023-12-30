@@ -18,6 +18,7 @@ import { CPU, laptopsell, Monitor } from "../services/api";
 import Image from "next/image";
 import { COLORS } from "@/constants/colors";
 import UsedLaptop from "../components/UsedLaptop";
+import Footer from "../components/Footer";
 
 const ProductShell = () => {
   return (
@@ -142,6 +143,7 @@ const ProductShell = () => {
           })}
         </SimpleGrid>
       </Box>
+      <Footer/>
     </Box>
   );
 };
