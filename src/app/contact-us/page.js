@@ -22,6 +22,7 @@ import { CiLocationOn } from "react-icons/ci";
 import { BsClock } from "react-icons/bs";
 import WhatssApp from "@/app/components/WhatssApp";
 import Footer from "@/app/components/Footer";
+import Seo from "../components/Seo";
 
 const ContactUs = () => {
   const form = useRef();
@@ -30,6 +31,7 @@ const ContactUs = () => {
 
   return (
     <Box mt="4rem" w="100%">
+    <Seo title="Near Computing" description="Welcome to our Near Computing contact page, if you have any query  related to PC, Laptop, Monitor, CPU, UPS, Printer connect with us"/>
       <Image src={contact} alt="" />
       <Flex
         w={{ base: "100%", md: "80%" }}

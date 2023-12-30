@@ -7,6 +7,7 @@ import Image from "next/image";
 import React from "react";
 import laptop from "../../assets/repair-service/laptop-repair.jpg"
 import Footer from "../components/Footer";
+import Seo from "../components/Seo";
 const parag =
   "At our laptop service center, we understand the importance of your laptop in your daily life, whether it's for work, study, or entertainment. Our team of highly skilled technicians is dedicated to providing top-notch laptop services to keep your device running smoothly.";
 
@@ -53,6 +54,7 @@ let lapiservice = [
 const MobileReapir = () => {
   return (
     <Box mt="4rem">
+    <Seo title="Laptop repair" description="Welcome to our Near Computing ,we are provoide repair service like laptop reapair , mobile repair, monitor repair, pc repair "/>
       <TopHeading headings="Laptop Repair Services" />
       <Box width={{ base: "100%", md: "80%" }} m="auto">
         <Subheading subheading="Welcome to Our Expert Laptop Service Center!" />

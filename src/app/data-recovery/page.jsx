@@ -14,6 +14,7 @@ import Image from "next/image";
 import React from "react";
 import dataRecovery from "../../assets/repair-service/data-recovery.jpg"
 import Footer from "@/app/components/Footer";
+import Seo from "../components/Seo";
 const parag =
   "Losing valuable data can be catastrophic. Whether it's personal memories or crucial business information, accidental deletion, hardware failure, or system crashes can lead to significant distress.We are understand the importance of your data and specialize in professional, reliable data recovery services tailored to meet your needs.";
 
@@ -60,6 +61,8 @@ let datarecovery = [
 const DataRecovery = () => {
   return (
     <Box mt="4rem">
+    <Seo title="Data Recovery" description="Welcome to our Near Computing , if you want recover your lost data then you can connect with us and we have Specialized Team"/>
+      <Image src={contact} alt="" />
       <TopHeading headings="Data recovery" />
       <Box width={{ base: "100%", md: "70%" }} m="auto">
         <Subheading subheading="Welcome to Our Expert Laptop Service Center!" />
