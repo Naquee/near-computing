@@ -71,7 +71,7 @@ const RepairCard = () => {
             >
               <Card
                 mt="2rem"
-                maxW="sm"
+                maxW="100%"
                 shadow="lg"
                 rounded="lg"
                 boxShadow="outline"

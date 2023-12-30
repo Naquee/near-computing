@@ -36,7 +36,7 @@ const LaptoRentalCard = () => {
             <motion.div whileHover={{ scale: 1.1 }} key={item.id}>
               <Link href={`details/${item.id}`}>
                 <Card
-                  maxW="sm"
+                  maxW="100%"
                   shadow="2xl"
                   rounded="lg"
                   whileHover={{ scale: 1.1 }}
