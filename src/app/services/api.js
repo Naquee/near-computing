@@ -14,7 +14,7 @@ import asus from "./icons/asus.svg"
 import samsung from "./icons/samsung.svg"
 import msi from "./icons/msi.svg"
 import benq from "./icons/benq.svg"
-import Zebronic from "./icons/Zebronic.svg"
+// import Zebronic from "./icons/Zebronic.svg"
 import lg from "./icons/lg.svg"
 
 
@@ -226,12 +226,12 @@ const Monitor = [
     imgUrl:lenovo
 
   },
-  {
-    id:10,
-    title:"Zebronics",
-    description:"",
-    imgUrl:Zebronic
-  },
+  // {
+  //   id:10,
+  //   title:"Zebronics",
+  //   description:"",
+  //   imgUrl:Zebronic
+  // },
   
 ];
 
