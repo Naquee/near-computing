@@ -22,7 +22,7 @@ import { useRouter } from 'next/navigation'
 const UsedLaptop = () => {
   const Router = useRouter();
   return (
-    <Box w={["60%", "90%"]} m="auto">
+    <Box w={["100%", "90%"]} m="auto">
       <TopHeading headings="SELL OLD PRODUCTS" />
       <SimpleGrid columns={[1, 2, 3]} spacing={10} mt={["0", "1rem"]}>
         {productsell?.map((item, index) => {

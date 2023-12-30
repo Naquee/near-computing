@@ -17,14 +17,9 @@ import benq from "./icons/benq.svg"
 // import Zebronic from "./icons/Zebronic.svg"
 import lg from "./icons/lg.svg"
 
-
-
 import usedLaptop from "./photos/usedLaptop1.jpg";
 import usedMonitor from "./photos/usedMonitor.jpg";
 import usedPc from "./photos/usedPc.jpg";
-
-
-
 
 
 const rent = [
