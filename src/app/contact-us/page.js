@@ -27,11 +27,12 @@ import Seo from "../components/Seo";
 const ContactUs = () => {
   const form = useRef();
 
-
-
   return (
     <Box mt="4rem" w="100%">
-    <Seo title="Near Computing" description="Welcome to our Near Computing contact page, if you have any query  related to PC, Laptop, Monitor, CPU, UPS, Printer connect with us"/>
+      <Seo
+        title="Contact Us"
+        description="Welcome to our Near Computing contact page, if you have any query  related to PC, Laptop, Monitor, CPU, UPS, Printer connect with us"
+      />
       <Image src={contact} alt="" />
       <Flex
         w={{ base: "100%", md: "80%" }}
@@ -39,11 +40,9 @@ const ContactUs = () => {
         top={{ base: "0", md: "-25rem" }}
         flexDir={["column", "row"]}
         ml={["0", "2rem"]}
-        // bg="rgba(0, 251, 255, 0.5)"
       >
         <Card
           w={["100%", "55%"]}
-          // border="1px solid red"
           bg="white"
           color="black"
           p="1rem"
@@ -123,7 +122,7 @@ const ContactUs = () => {
                 </Stack>
               </HStack>
               <Text m="0.5rem 0 0 3rem" fontSize="18px">
-              info@nearcomputing.in
+                info@nearcomputing.in
               </Text>
             </a>
           </Box>
@@ -173,7 +172,7 @@ const ContactUs = () => {
       >
         {/* <Flex color="white" justifyContent="flex-end" bg="white"> */}
         <Box float="right" p="3rem">
-          <WhatssApp bgColor="white"/>
+          <WhatssApp bgColor="white" />
         </Box>
         {/* </Flex> */}
 
