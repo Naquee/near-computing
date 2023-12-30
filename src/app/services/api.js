@@ -12,9 +12,9 @@ import acer from "./icons/acer.svg"
 import lenovo from "./icons/lenovo.svg"
 import asus from "./icons/asus.svg"
 import samsung from "./icons/samsung.svg"
-import msi from "./icons/msi.png"
-import benq from "./icons/benq.png"
-import Zebronic from "./icons/Zebronic.png"
+import msi from "./icons/msi.svg"
+import benq from "./icons/benq.svg"
+import Zebronic from "./icons/Zebronic.svg"
 import lg from "./icons/lg.svg"
 
 
