@@ -70,12 +70,11 @@ const Footer = () => {
             <Text>
               <a href="tel:9874563217">
                 <Text fontWeight="bold" as="span">
-                  Call : (+91) 9871608330
-                </Text>{" "}
+                  Call : +91 9871 608 330
+                </Text>
               </a>
             </Text>
-            <Text>
-              {" "}
+            <Text>    
               <Text fontWeight="bold" as="span">
                 Email :
               </Text>
@@ -84,7 +83,7 @@ const Footer = () => {
           </Flex>
           <Text mt="0.5rem" color="gray.300">
             <Text fontWeight="bold" as="span">
-              Address :{" "}
+              Address :
             </Text>
             Ashoka Bhawan Nehru Place New Delhi (110019) India
           </Text>

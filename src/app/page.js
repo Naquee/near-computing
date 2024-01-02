@@ -16,7 +16,7 @@ export default function Home() {
 
   return (
     <main>
-      <Box mt="3rem">
+      <Box mt={["2rem","0"]}>
         {/* <CommingSoon/> */}
         {/* <Carasole/> */}
         <LandingCard />

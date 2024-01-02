@@ -3,7 +3,7 @@ import Image from 'next/image'
 import React from 'react'
 import whatsapp from "../../assets/whatsapp.svg"
 
-const WhatssApp = ({bgColor}) => {
+const WhatssApp = ({bgColor,color}) => {
   const handleButtonClick = () => {
     const phoneNumber = '9871608330'; // Replace with the desired phone number
     const message = 'Hey i have query'; // Replace with your default message
@@ -12,7 +12,7 @@ const WhatssApp = ({bgColor}) => {
 };
   return (
     <Box>
-    <Card maxW='sm' backgroundColor={bgColor}>
+    <Card maxW='sm'  background={bgColor} color={color}>
   <CardBody>
     <Stack mt='0' spacing='3'>
       <Heading size='md'>Quick Response</Heading>

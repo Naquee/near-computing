@@ -22,14 +22,29 @@ import { useRouter } from 'next/navigation'
 const UsedLaptop = () => {
   const Router = useRouter();
   return (
-    <Box w={["100%", "90%"]} m="auto">
+    <Box>
       <TopHeading headings="SELL OLD PRODUCTS" />
-      <SimpleGrid columns={[1, 2, 3]} spacing={10} mt={["0", "1rem"]}>
+      <SimpleGrid 
+          mt={["0", "1rem"]}
+          columns={[1, 2, 3]}
+          spacing="20px"
+          justifyContent="center"
+          w={["95%","85%"]}
+          m="auto"
+         >
         {productsell?.map((item, index) => {
           return (
             <Box key={item.id}>
-              <motion.div whileHover={{ scale: 1.1 }} key={item.id}>
-                <Card maxW="100%" onClick={() => Router.push("/product-sell")} cursor="pointer">
+              <motion.div whileHover={{ scale: 1.03 }} key={item.id}>
+                <Card 
+                   mt="2rem"
+                   maxW="100%"
+                   shadow="lg"
+                   rounded="lg"
+                   boxShadow="outline"
+                   p="6"
+                   cursor="pointer"
+                onClick={() => Router.push("/product-sell")}>
                   <CardBody>
                     <Image
                       src={item.imgUrl}

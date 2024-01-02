@@ -53,19 +53,19 @@ const RepairCard = () => {
   const router = useRouter();
 
   return (
-    <Box mt="5rem">
+    <Box mt={["1rem","5rem"]}>
       <TopHeading headings="REPAIRING SERVICES" />
       <SimpleGrid
         columns={[1, 2, 3]}
         spacing="20px"
         justifyContent="center"
-        w="85%"
+        w={["95%","85%"]}
         m="auto"
       >
         {serverice?.map((item) => {
           return (
             <motion.div
-              whileHover={{ scale: 1.1 }}
+              whileHover={{ scale: 1.03 }}
               // whileTap={{ scale: 0.7 }}
               key={item.id}
             >
@@ -76,8 +76,9 @@ const RepairCard = () => {
                 rounded="lg"
                 boxShadow="outline"
                 p="6"
-                onClick={() => router.push(`/${item.link}`)}
                 cursor="pointer"
+                borderRadius="xl"
+                onClick={() => router.push(`/${item.link}`)}
               >
                 <CardBody>
                   <Image

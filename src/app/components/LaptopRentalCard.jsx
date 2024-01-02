@@ -28,20 +28,23 @@ const LaptoRentalCard = () => {
         columns={[1, 2, 3]}
         spacing="20px"
         justifyContent="center"
-        w="95%"
+        w={["95%","85%"]}
         m="auto"
       >
         {rent?.map((item) => {
           return (
-            <motion.div whileHover={{ scale: 1.1 }} key={item.id}>
+            <motion.div whileHover={{ scale: 1.03 }} key={item.id}>
               <Link href={`details/${item.id}`}>
                 <Card
-                  maxW="100%"
-                  shadow="2xl"
-                  rounded="lg"
-                  whileHover={{ scale: 1.1 }}
-                  p={{ base: "0", md: "0 1rem 0 1rem" }}
-                  cursor="pointer"
+                    mt="2rem"
+                    maxW="100%"
+                    shadow="lg"
+                    rounded="lg"
+                    boxShadow="outline"
+                    p="6"
+                    cursor="pointer"
+                  // whileHover={{ scale: 1.1 }}
+                  // p={{ base: "0", md: "0 1rem 0 1rem" }}
                 >
                   <CardBody>
                     <Image

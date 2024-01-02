@@ -1,6 +1,6 @@
 import { Box, Divider, Heading, Card, keyframes, Center, Text } from "@chakra-ui/react";
 import React from "react";
-import hsc from "../../assets/hsc11.jpg";
+import hsc from "../../assets/hsc1.jpg";
 import Image from "next/image";
 import TopHeading from "./TopHeading";
 import WhatssApp from "./WhatssApp";
@@ -21,16 +21,17 @@ const LandingCard = () => {
         <Image src={hsc} alt="carasole" objectFit="cover" />
       </Box>
       <Card
-        w={["100%", "40%"]}
+        w={["100%", "32%"]}
         pos={["static", "absolute"]}
-        top={["0", "7rem"]}
-        left={["0","58%"]}
+        top={["0", "6rem"]}
+        left={["0","1%"]}
         color={["black", "white"]}
         fontSize={["16px", "20px"]}
         background="rgba(0, 136, 255, 0.5)"
         p={["0", "2rem"]}
         mt={["1rem", "0rem"]}
         shadow="lg"
+        borderRadius="2xl"
       >
       <motion.div
       animate={animation}
@@ -50,7 +51,7 @@ const LandingCard = () => {
     </motion.div>
 
         {/* <TopHeading color={COLORS.white} headings="Our Service" /> */}
-        <Text p={["1.5","0"]}>
+        <Text p={["1rem","0"]}>
           Unlock the power of seamless productivity with our laptop rental
           services. Whether you are a student in need of a temporary setup or a
           professional on the go, our diverse range of high-performance laptops
@@ -65,15 +66,17 @@ const LandingCard = () => {
       </Card>
 
      <Card
-        w={["100%", "25%"]}
+        // w={["100%", "25%"]}
         pos={["static", "absolute"]}
-        top={["0", "30rem"]}
+        top={["0", "35rem"]}
+        left={["0","68%"]}
         color={["black", "white"]}
         ml={["0","2rem"]}
         mt={["1rem", "0rem"]}
         shadow="lg"
+        bgColor="rgba(255, 255, 255, 0)"
       >
-      <WhatssApp bgColor="rgba(255, 255, 255, 0.5)"/>
+      <WhatssApp color="black" bgColor="rgba(252, 249, 249, 0.68)"/>
       </Card>
     </Box>
   );
