@@ -23,12 +23,14 @@ import { BsClock } from "react-icons/bs";
 import WhatssApp from "@/app/components/WhatssApp";
 import Footer from "@/app/components/Footer";
 import Seo from "../components/Seo";
+import Navbar from "../components/Navbar";
 
 const ContactUs = () => {
   const form = useRef();
 
   return (
     <Box mt="0rem" w="100%">
+      <Navbar />
       <Seo
         title="Contact Us"
         description="Welcome to our Near Computing contact page, if you have any query  related to PC, Laptop, Monitor, CPU, UPS, Printer connect with us"
