@@ -28,7 +28,7 @@ const ContactUs = () => {
   const form = useRef();
 
   return (
-    <Box mt="4rem" w="100%">
+    <Box mt="0rem" w="100%">
       <Seo
         title="Contact Us"
         description="Welcome to our Near Computing contact page, if you have any query  related to PC, Laptop, Monitor, CPU, UPS, Printer connect with us"
