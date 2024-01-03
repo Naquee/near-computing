@@ -53,7 +53,7 @@ let softwareupdate = [
 
 const SoftWareUpdate = () => {
   return (
-    <Box mt="4rem">
+    <Box>
       <TopHeading headings="SoftWare Update and Formate" />
       <Box width={{ base: "100%", md: "70%" }} m="auto">
         <Subheading subheading="Welcome to Near Computing – Empowering Your Devices with Optimized Software and Fresh Starts" />

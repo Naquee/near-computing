@@ -53,8 +53,8 @@ let lapiservice = [
 
 const MobileReapir = () => {
   return (
-    <Box mt="4rem">
-    <Seo title="Laptop repair" description="Welcome to our Near Computing ,we are provoide repair service like laptop reapair , mobile repair, monitor repair, pc repair "/>
+    <Box>
+      <Seo title="Laptop repair" description="Welcome to our Near Computing ,we are provoide repair service like laptop reapair , mobile repair, monitor repair, pc repair " />
       <TopHeading headings="Laptop Repair Services" />
       <Box width={{ base: "100%", md: "80%" }} m="auto">
         <Subheading subheading="Welcome to Our Expert Laptop Service Center!" />
@@ -63,7 +63,7 @@ const MobileReapir = () => {
         </Flex>
 
         <TopHeading headings="Our Services:" />
-        <Image  src={laptop} alt="laptop" width="100%" style={{objectFit:"cover"}} />
+        <Image src={laptop} alt="laptop" width="100%" style={{ objectFit: "cover" }} />
 
         {lapiservice.map((item, index) => {
           return (

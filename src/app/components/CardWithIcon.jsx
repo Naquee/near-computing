@@ -28,7 +28,7 @@ const CardWithIcon = () => {
           <Box p="0.25rem">{item?.title2}</Box>
         </Box>
         <Flex justifyContent="center">
-          <Image src={item?.icon} alt="image is not support" width="3rem" />
+          <Image src={item?.icon} alt="Near Computing" width="3rem" />
         </Flex>
       </Box>
     </Box>

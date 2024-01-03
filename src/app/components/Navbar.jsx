@@ -99,7 +99,7 @@ const Navbar = () => {
         >
           <Box p='0.25rem 0 0.25rem 2rem'>
             <Link href="/">
-              <Image src={NClogo} alt="logo" />
+              <Image src={NClogo} alt="Near Computing" />
             </Link>
           </Box>
           <Flex pr="2rem" gap="2rem" pt={5}>
@@ -140,7 +140,7 @@ const Navbar = () => {
         >
           <Box p='0.25rem'>
             <Link href="/">
-            <Image src={NClogo} alt="logo"/>
+              <Image src={NClogo} alt="logo" />
             </Link>
           </Box>
 

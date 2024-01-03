@@ -36,7 +36,7 @@ const Footer = () => {
             {/* <Text fontSize="20px"></Text> */}
             <Box p="0.25rem">
               <Link href="/">
-                <Image src={NClogo} alt="logo" />
+                <Image src={NClogo} alt="Near Computing" />
               </Link>
             </Box>
           </Box>
@@ -74,7 +74,7 @@ const Footer = () => {
                 </Text>
               </a>
             </Text>
-            <Text>    
+            <Text>
               <Text fontWeight="bold" as="span">
                 Email :
               </Text>

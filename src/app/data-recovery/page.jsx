@@ -60,8 +60,8 @@ let datarecovery = [
 
 const DataRecovery = () => {
   return (
-    <Box mt="4rem">
-    <Seo title="Data Recovery" description="Welcome to our Near Computing , if you want recover your lost data then you can connect with us and we have Specialized Team"/>
+    <Box>
+      <Seo title="Data Recovery" description="Welcome to our Near Computing , if you want recover your lost data then you can connect with us and we have Specialized Team" />
       <TopHeading headings="Data recovery" />
       <Box width={{ base: "100%", md: "70%" }} m="auto">
         <Subheading subheading="Welcome to Our Expert Laptop Service Center!" />

@@ -11,7 +11,7 @@ import React, { useMemo } from "react";
 const InnerDetails = () => {
   const { innerDetailsId } = useParams();
   // console.log("InnerId", innerDetailsId);
-  
+
   const [innterDetails] = useMemo(
     () => rent.filter((innerElm) => innerElm.id === Number(innerDetailsId)),
     [innerDetailsId]
@@ -19,7 +19,7 @@ const InnerDetails = () => {
 
   // console.log("innterDetails", innterDetails);
   return (
-    <Box mt="6rem">
+    <Box>
       <Box mt="6rem" w="80%" m="auto">
         <TopHeading headings={innterDetails.name} />
         <Flex mt="1rem" justifyContent="center">
@@ -27,7 +27,7 @@ const InnerDetails = () => {
             src={innterDetails?.ImageUrl}
             alt={innterDetails?.id}
             objectFit={"cover"}
-            //   w={{ base: "100%", md: "60%" }}
+          //   w={{ base: "100%", md: "60%" }}
           />
         </Flex>
         <Box mt="1rem">
@@ -36,7 +36,7 @@ const InnerDetails = () => {
             w={{ base: "100%", md: "100%" }}
             m="auto"
           >
-            <Text fontSize={{base:"20px" ,md:"25px"}} fontWeight="800" color={COLORS.Navi}>
+            <Text fontSize={{ base: "20px", md: "25px" }} fontWeight="800" color={COLORS.Navi}>
               {innterDetails?.heading1}
             </Text>
           </Card>
@@ -48,22 +48,22 @@ const InnerDetails = () => {
           ></Box>
         </Box>
         <Box mt="1rem">
-        <Card
+          <Card
             p="1rem"
             w={{ base: "100%", md: "100%" }}
             m="auto"
           >
-          <Text color={COLORS.Navi} fontSize={{base:"20px" ,md:"25px"}} fontWeight="800">{innterDetails?.heading2}</Text>
+            <Text color={COLORS.Navi} fontSize={{ base: "20px", md: "25px" }} fontWeight="800">{innterDetails?.heading2}</Text>
           </Card>
           <Box
-          color="GrayText"
+            color="GrayText"
             dangerouslySetInnerHTML={{ __html: innterDetails?.description2 }}
           ></Box>
         </Box>
       </Box>
-      <Footer/>
+      <Footer />
 
-   
+
     </Box>
   );
 };
