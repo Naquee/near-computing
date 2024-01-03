@@ -10,18 +10,23 @@ import LaptoRentalCard from "./components/LaptopRentalCard";
 import RepairCard from "./components/RepairCard";
 import { laptopsell } from "./services/api";
 import UsedLaptop from "./components/UsedLaptop";
+import Seo from "./components/Seo";
 
 export default function Home() {
   // console.log("rent", rent);
 
   return (
     <main>
-      <Box mt={["2rem","0"]}>
+      <Box mt={["2rem", "0"]}>
         {/* <CommingSoon/> */}
         {/* <Carasole/> */}
+        <Seo
+          title="Near Computing"
+          description="Welcome to Near computing for old laptop ,second laptop,refurbished laptop,second hand laptop, buy second hand laptop, second hand laptop insurance, second hand laptop store near me, second hand laptop near me s,econd hand laptop price, second hand laptop for sale"
+        />
         <LandingCard />
         <LaptoRentalCard />
-        <UsedLaptop/>
+        <UsedLaptop />
         <RepairCard />
         <Footer />
       </Box>

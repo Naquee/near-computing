@@ -70,7 +70,7 @@ const DataRecovery = () => {
         </Flex>
 
         <TopHeading headings="Our Services:" />
-        <Image src={dataRecovery} alt="laptop" width="full" />
+        <Image src={dataRecovery} alt="Near Computing" width="full" />
         {/* <img src={""} alt="" /> */}
 
         {datarecovery.map((item, index) => {

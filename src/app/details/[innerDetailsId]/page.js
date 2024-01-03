@@ -25,7 +25,7 @@ const InnerDetails = () => {
         <Flex mt="1rem" justifyContent="center">
           <Image
             src={innterDetails?.ImageUrl}
-            alt={innterDetails?.id}
+            alt="Near Computing"
             objectFit={"cover"}
           //   w={{ base: "100%", md: "60%" }}
           />

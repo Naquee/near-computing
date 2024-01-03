@@ -103,7 +103,7 @@ const Footer = () => {
             color="gray.200"
           >
             <Box w="35px" h="35px" cursor="pointer" onClick={handleButtonClick}>
-              <Image src={whatsapp} alt="whatsapp" />
+              <Image src={whatsapp} alt="Near Computing" />
             </Box>
             <a
               href="https://www.linkedin.com/in/naquee-alam/"

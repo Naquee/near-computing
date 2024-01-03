@@ -28,7 +28,7 @@ const LaptoRentalCard = () => {
         columns={[1, 2, 3]}
         spacing="20px"
         justifyContent="center"
-        w={["95%","85%"]}
+        w={["95%", "85%"]}
         m="auto"
       >
         {rent?.map((item) => {
@@ -36,20 +36,20 @@ const LaptoRentalCard = () => {
             <motion.div whileHover={{ scale: 1.03 }} key={item.id}>
               <Link href={`details/${item.id}`}>
                 <Card
-                    mt="2rem"
-                    maxW="100%"
-                    shadow="lg"
-                    rounded="lg"
-                    boxShadow="outline"
-                    p="6"
-                    cursor="pointer"
-                  // whileHover={{ scale: 1.1 }}
-                  // p={{ base: "0", md: "0 1rem 0 1rem" }}
+                  mt="2rem"
+                  maxW="100%"
+                  shadow="lg"
+                  rounded="lg"
+                  boxShadow="outline"
+                  p="6"
+                  cursor="pointer"
+                // whileHover={{ scale: 1.1 }}
+                // p={{ base: "0", md: "0 1rem 0 1rem" }}
                 >
                   <CardBody>
                     <Image
                       src={item.ImageUrl}
-                      alt="Green double couch with wooden legs"
+                      alt="Near Computing"
                       borderRadius="lg"
                       width="50px"
                       height="100px"

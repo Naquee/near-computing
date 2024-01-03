@@ -62,7 +62,7 @@ const SoftWareUpdate = () => {
         </Flex>
 
         <TopHeading headings="Our Services:" />
-        <Image src={software} alt="laptop" width="full" />
+        <Image src={software} alt="Near Computing" width="full" />
         {/* <img src={""} alt="" /> */}
 
         {softwareupdate.map((item, index) => {

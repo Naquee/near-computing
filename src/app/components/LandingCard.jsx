@@ -18,13 +18,13 @@ const LandingCard = () => {
   return (
     <Box>
       <Box bg="#2d2a2b">
-        <Image src={hsc} alt="carasole" objectFit="cover" />
+        <Image src={hsc} alt="Near Computing" objectFit="cover" />
       </Box>
       <Box
         w={["100%", "30%"]}
         pos={["static", "absolute"]}
         top={["0", "26rem"]}
-        left={["0","37%"]}
+        left={["0", "37%"]}
         color={["black", "white"]}
         fontSize={["16px", "20px"]}
         fontWeight="bold"
@@ -35,23 +35,23 @@ const LandingCard = () => {
         borderRadius="2xl"
       >
         {/* <TopHeading color={COLORS.white} headings="Our Service" /> */}
-        <Text p={["1rem","0"]} fontSize="30px" fontFamily="Merriweather">
-        Welcome to Near Computing
+        <Text p={["1rem", "0"]} fontSize="30px" fontFamily="Merriweather">
+          Welcome to Near Computing
         </Text>
       </Box>
 
-     <Card
+      <Card
         // w={["100%", "25%"]}
         pos={["static", "absolute"]}
         top={["0", "35rem"]}
-        left={["0","78%"]}
+        left={["0", "78%"]}
         color={["black", "white"]}
-        ml={["0","2rem"]}
+        ml={["0", "2rem"]}
         mt={["1rem", "0rem"]}
         shadow="lg"
         bgColor="rgba(255, 255, 255, 0)"
       >
-      <WhatssApp color="black" bgColor="rgba(252, 249, 249, 0.68)"/>
+        <WhatssApp color="black" bgColor="rgba(252, 249, 249, 0.68)" />
       </Card>
     </Box>
   );

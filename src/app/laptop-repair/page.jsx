@@ -63,7 +63,7 @@ const MobileReapir = () => {
         </Flex>
 
         <TopHeading headings="Our Services:" />
-        <Image src={laptop} alt="laptop" width="100%" style={{ objectFit: "cover" }} />
+        <Image src={laptop} alt="Near Computing" width="100%" style={{ objectFit: "cover" }} />
 
         {lapiservice.map((item, index) => {
           return (

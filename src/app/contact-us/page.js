@@ -33,7 +33,7 @@ const ContactUs = () => {
         title="Contact Us"
         description="Welcome to our Near Computing contact page, if you have any query  related to PC, Laptop, Monitor, CPU, UPS, Printer connect with us"
       />
-      <Image src={contact} alt="" />
+      <Image src={contact} alt="Near Computing" />
       <Flex
         w={{ base: "100%", md: "80%" }}
         pos={{ base: "static", md: "relative" }}

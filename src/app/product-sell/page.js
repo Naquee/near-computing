@@ -53,10 +53,10 @@ const ProductShell = () => {
         </Box>
         <Flex>
           <Box w="50%">
-            <Image src={pc1} alt="hefll" />
+            <Image src={pc1} alt="Near Computing" />
           </Box>
           <Box w="50%">
-            <Image src={pc2} alt="hefll" />
+            <Image src={pc2} alt="Near Computing" />
           </Box>
         </Flex>
 
@@ -246,7 +246,7 @@ const ProductShell = () => {
                       <Center>
                         <Image
                           src={item.imgUrl}
-                          alt="Green double couch with wooden legs"
+                          alt="Near Computing"
                           borderRadius="lg"
                           width={100}
                           height={100}
@@ -286,7 +286,7 @@ const ProductShell = () => {
                       <Center>
                         <Image
                           src={item.imgUrl}
-                          alt="Green double couch with wooden legs"
+                          alt="Near Computing"
                           borderRadius="lg"
                           width={100}
                           height={100}

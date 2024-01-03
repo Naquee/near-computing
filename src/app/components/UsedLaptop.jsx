@@ -24,31 +24,31 @@ const UsedLaptop = () => {
   return (
     <Box>
       <TopHeading headings="SELL OLD PRODUCTS" />
-      <SimpleGrid 
-          mt={["0", "1rem"]}
-          columns={[1, 2, 3]}
-          spacing="20px"
-          justifyContent="center"
-          w={["95%","85%"]}
-          m="auto"
-         >
+      <SimpleGrid
+        mt={["0", "1rem"]}
+        columns={[1, 2, 3]}
+        spacing="20px"
+        justifyContent="center"
+        w={["95%", "85%"]}
+        m="auto"
+      >
         {productsell?.map((item, index) => {
           return (
             <Box key={item.id}>
               <motion.div whileHover={{ scale: 1.03 }} key={item.id}>
-                <Card 
-                   mt="2rem"
-                   maxW="100%"
-                   shadow="lg"
-                   rounded="lg"
-                   boxShadow="outline"
-                   p="6"
-                   cursor="pointer"
-                onClick={() => Router.push("/product-sell")}>
+                <Card
+                  mt="2rem"
+                  maxW="100%"
+                  shadow="lg"
+                  rounded="lg"
+                  boxShadow="outline"
+                  p="6"
+                  cursor="pointer"
+                  onClick={() => Router.push("/product-sell")}>
                   <CardBody>
                     <Image
                       src={item.imgUrl}
-                      alt="Green double couch with wooden legs"
+                      alt="Near Computing"
                       borderRadius="lg"
                     />
                     <Stack mt="6" spacing="3">

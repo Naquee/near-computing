@@ -57,7 +57,7 @@ const Repair = () => {
               <CardBody>
                 <Image
                   src={laptop}
-                  alt="Green double couch with wooden legs"
+                  alt="Near Computing"
                   borderRadius="lg"
                   width="100px"
                 />

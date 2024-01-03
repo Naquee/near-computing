@@ -53,13 +53,13 @@ const RepairCard = () => {
   const router = useRouter();
 
   return (
-    <Box mt={["1rem","5rem"]}>
+    <Box mt={["1rem", "5rem"]}>
       <TopHeading headings="REPAIRING SERVICES" />
       <SimpleGrid
         columns={[1, 2, 3]}
         spacing="20px"
         justifyContent="center"
-        w={["95%","85%"]}
+        w={["95%", "85%"]}
         m="auto"
       >
         {serverice?.map((item) => {
@@ -83,7 +83,7 @@ const RepairCard = () => {
                 <CardBody>
                   <Image
                     src={item.ImageUrl}
-                    alt="Green double couch with wooden legs"
+                    alt="Near Computing"
                     borderRadius="lg"
                     width="100px"
                     height="100px"
@@ -115,4 +115,3 @@ const RepairCard = () => {
 };
 
 export default RepairCard;
- 
