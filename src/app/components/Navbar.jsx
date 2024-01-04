@@ -22,6 +22,7 @@ import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { MdArrowDropDown } from "react-icons/md";
 import NClogo from "../../assets/Nlogo.png";
 import Image from "next/image";
+import TopNav from "./TopNav";
 
 const Navbar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -92,6 +93,7 @@ const Navbar = () => {
         boxShadow="2xl"
         background="white"
       >
+        <TopNav />
         <Flex
           width="full"
           justifyContent="space-between"
