@@ -6,6 +6,7 @@ import TopHeading from "./TopHeading";
 import WhatssApp from "./WhatssApp";
 import { COLORS } from "@/constants/colors";
 import { motion } from "framer-motion";
+import LandingWhatsappCard from "./LandingWhatsappCard";
 
 
 const LandingCard = () => {
@@ -40,19 +41,20 @@ const LandingCard = () => {
         </Text>
       </Box>
 
-      <Card
+      <Box
         // w={["100%", "25%"]}
-        pos={["static", "absolute"]}
-        top={["0", "35rem"]}
-        left={["0", "78%"]}
+        pos={["static", "fixed"]}
+        zIndex="50"
+        top={["0", "38rem"]}
+        left={["0", "85%"]}
         color={["black", "white"]}
         ml={["0", "2rem"]}
         mt={["1rem", "0rem"]}
         shadow="lg"
         bgColor="rgba(255, 255, 255, 0)"
       >
-        <WhatssApp color="black" bgColor="rgba(252, 249, 249, 0.68)" />
-      </Card>
+        <LandingWhatsappCard color="white" bgColor="rgba(0, 128, 255, 0.31)" />
+      </Box>
     </Box>
   );
 };

@@ -127,19 +127,24 @@ const Footer = () => {
           </Flex>
         </Box>
       </Flex>
-      <Box w="90%" m="auto" fontSize="20px" fontWeight="bold">
+      <Box w="95%" m="auto" fontSize="20px" fontWeight="bold">
         <Divider border="2px solid gray.300" mt="1rem" />
       </Box>
-      <Center
-        w={{ base: "99%", md: "40%" }}
+    <Flex w="100%" p="1rem">
+    <Box color="white" w="50%" pl={["0rem","2rem"]}  fontSize={{ base: "10px", md: "16px" }}>
+      <a href="https://sydamwebsolutions.com/" target="_blank">Powerd by Sydam Web Solution</a>
+      </Box>
+    <Box
+        w="50%"
         m="auto"
-        p="2rem"
         fontSize={{ base: "16px" }}
       >
-        <Text fontSize={{ base: "12px", md: "16px" }} color="white">
-          All Rights Reserved.
+        <Text fontSize={{ base: "10px", md: "16px" }} color="white">
+        © All Rights Reserved by Near Computing.
         </Text>
-      </Center>
+      </Box>
+     
+    </Flex>
     </Box>
   );
 };

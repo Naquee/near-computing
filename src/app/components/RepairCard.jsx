@@ -25,7 +25,7 @@ import software from "../../assets/repairPhoto/software.jpg";
 const serverice = [
   {
     id: 1,
-    name: "Latop Repairing",
+    name: "Laptop Repairing",
     //   image: laptop,
     ImageUrl: laptoRepair,
     deescription: "  At our laptop service center, we understand the importance of your laptop in your daily life,",
