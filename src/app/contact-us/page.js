@@ -62,11 +62,11 @@ const ContactUs = () => {
                 placeholder="Please Enter Your Name"
               />
               <br />
-              <FormLabel>Enter Your Name</FormLabel>
+              <FormLabel>Enter Your Email</FormLabel>
               <Input
                 type="email"
                 name="email"
-                placeholder="Please Enter Your Name"
+                placeholder="Please Enter Your Email"
               />
               <br />
               <FormLabel>Enter Your Query</FormLabel>
