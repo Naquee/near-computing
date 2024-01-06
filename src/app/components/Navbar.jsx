@@ -87,11 +87,12 @@ const Navbar = () => {
   return (
     <>
       <Box
-        w="full"
+        w="100%"
         zIndex="100"
         pos="fixed"
         boxShadow="2xl"
         background="white"
+        top="0"
       >
         <TopNav />
         <Flex

@@ -1,4 +1,12 @@
-import { Box, Divider, Heading, Card, keyframes, Center, Text } from "@chakra-ui/react";
+import {
+  Box,
+  Divider,
+  Heading,
+  Card,
+  keyframes,
+  Center,
+  Text,
+} from "@chakra-ui/react";
 import React from "react";
 import hsc from "../../assets/hsc1.jpg";
 import Image from "next/image";
@@ -8,9 +16,7 @@ import { COLORS } from "@/constants/colors";
 import { motion } from "framer-motion";
 import LandingWhatsappCard from "./LandingWhatsappCard";
 
-
 const LandingCard = () => {
-
   const animationKeyframes = keyframes`
   10% { transform: scale(2); }
   100% { transform: scale(1); }`;
@@ -18,41 +24,24 @@ const LandingCard = () => {
   const animation = `${animationKeyframes} 1.5s ease-in-out 1`;
   return (
     <Box>
-      <Box bg="#2d2a2b">
+      <Box bg="#2d2a2b" mt={["3rem", "0"]}>
         <Image src={hsc} alt="Near Computing" objectFit="cover" />
       </Box>
       <Box
         w={["100%", "30%"]}
-        pos={["static", "absolute"]}
-        top={["0", "26rem"]}
-        left={["0", "37%"]}
-        color={["black", "white"]}
-        fontSize={["16px", "20px"]}
+        pos={["relative", "relative"]}
+        top={["-10rem", "-6rem"]}
+        left={["20%", "3%"]}
+        color={["white", "white"]}
         fontWeight="bold"
         // background="rgba(252, 249, 249, 0.68)"
-        p={["0", "2rem"]}
-        mt={["1rem", "0rem"]}
-        shadow="lg"
-        borderRadius="2xl"
       >
-        {/* <TopHeading color={COLORS.white} headings="Our Service" /> */}
-        <Text p={["1rem", "0"]} fontSize="30px" fontFamily="Merriweather">
+        <Text p={["1rem", "0"]} fontFamily="Merriweather" fontSize={["16px", "30px"]}>
           Welcome to Near Computing
         </Text>
       </Box>
 
-      <Box
-        // w={["100%", "25%"]}
-        pos={["static", "fixed"]}
-        zIndex="50"
-        top={["0", "38rem"]}
-        left={["0", "85%"]}
-        color={["black", "white"]}
-        ml={["0", "2rem"]}
-        mt={["1rem", "0rem"]}
-        shadow="lg"
-        bgColor="rgba(255, 255, 255, 0)"
-      >
+      <Box  pos="fixed" left={["80%","85%"]} top={["28%","70%"]} zIndex="100">
         <LandingWhatsappCard color="white" bgColor="rgba(0, 128, 255, 0.31)" />
       </Box>
     </Box>

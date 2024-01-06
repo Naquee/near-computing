@@ -27,6 +27,7 @@ export default function RootLayout({ children }) {
         description="Welcome to Near computing for old laptop ,second laptop,refurbished laptop,second hand laptop, buy second hand laptop, second hand laptop insurance, second hand laptop store near me, second hand laptop near me s,econd hand laptop price, second hand laptop for sale"
       />
       <body>
+      
         <ChakraProvider>
           {children}
         </ChakraProvider>

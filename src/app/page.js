@@ -18,16 +18,14 @@ export default function Home() {
 
   return (
     <main>
-      <Box mt={["2rem", "0"]}>
+    <Navbar/>
+      <Box mt={["2rem", "0"]} overflow="hidden">
         {/* <CommingSoon/> */}
         {/* <Carasole/> */}
         <Seo
           title="Near Computing"
           description="Welcome to Near computing for old laptop ,second laptop,refurbished laptop,second hand laptop, buy second hand laptop, second hand laptop insurance, second hand laptop store near me, second hand laptop near me s,econd hand laptop price, second hand laptop for sale"
         />
-        <Box mt={["-2rem", "0"]}>
-          <Navbar />
-        </Box>
         <LandingCard />
         <LaptoRentalCard />
         <UsedLaptop />

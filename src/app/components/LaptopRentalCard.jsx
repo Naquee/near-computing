@@ -10,7 +10,7 @@ import {
   Stack,
   Text,
   CardFooter,
-  ButtonGroup
+  ButtonGroup,
 } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import Image from "next/image";
@@ -21,7 +21,7 @@ import { rent } from "../services/api";
 
 const LaptoRentalCard = () => {
   return (
-    <Box>
+    <Box mt={["-4rem", "-2rem"]}>
       <TopHeading headings="OUR RENTAL PRODUCTS" />
       <SimpleGrid
         mt={["0", "1rem"]}
@@ -43,8 +43,8 @@ const LaptoRentalCard = () => {
                   boxShadow="outline"
                   p="6"
                   cursor="pointer"
-                // whileHover={{ scale: 1.1 }}
-                // p={{ base: "0", md: "0 1rem 0 1rem" }}
+                  // whileHover={{ scale: 1.1 }}
+                  // p={{ base: "0", md: "0 1rem 0 1rem" }}
                 >
                   <CardBody>
                     <Image
