@@ -1,8 +1,6 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { ChakraProvider } from "@chakra-ui/react";
-import Navbar from "./components/Navbar";
-import Head from "./head";
 import Seo from "./components/Seo";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -27,7 +25,6 @@ export default function RootLayout({ children }) {
         description="Welcome to Near computing for old laptop ,second laptop,refurbished laptop,second hand laptop, buy second hand laptop, second hand laptop insurance, second hand laptop store near me, second hand laptop near me s,econd hand laptop price, second hand laptop for sale"
       />
       <body>
-      
         <ChakraProvider>
           {children}
         </ChakraProvider>

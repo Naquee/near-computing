@@ -3,7 +3,7 @@ import Footer from "@/app/components/Footer";
 import TopHeading from "@/app/components/TopHeading";
 import { rent } from "@/app/services/api";
 import { COLORS } from "@/constants/colors";
-import { Box, Card, Flex, Heading, Text } from "@chakra-ui/react";
+import { Box, Card, Flex, Text } from "@chakra-ui/react";
 import Image from "next/image";
 import { useParams } from "next/navigation";
 import React, { useMemo } from "react";
@@ -27,16 +27,16 @@ const InnerDetails = () => {
             src={innterDetails?.ImageUrl}
             alt="Near Computing"
             objectFit={"cover"}
-          //   w={{ base: "100%", md: "60%" }}
+            //   w={{ base: "100%", md: "60%" }}
           />
         </Flex>
         <Box mt="1rem">
-          <Card
-            p="1rem"
-            w={{ base: "100%", md: "100%" }}
-            m="auto"
-          >
-            <Text fontSize={{ base: "20px", md: "25px" }} fontWeight="800" color={COLORS.Navi}>
+          <Card p="1rem" w={{ base: "100%", md: "100%" }} m="auto">
+            <Text
+              fontSize={{ base: "20px", md: "25px" }}
+              fontWeight="800"
+              color={COLORS.Navi}
+            >
               {innterDetails?.heading1}
             </Text>
           </Card>
@@ -48,12 +48,14 @@ const InnerDetails = () => {
           ></Box>
         </Box>
         <Box mt="1rem">
-          <Card
-            p="1rem"
-            w={{ base: "100%", md: "100%" }}
-            m="auto"
-          >
-            <Text color={COLORS.Navi} fontSize={{ base: "20px", md: "25px" }} fontWeight="800">{innterDetails?.heading2}</Text>
+          <Card p="1rem" w={{ base: "100%", md: "100%" }} m="auto">
+            <Text
+              color={COLORS.Navi}
+              fontSize={{ base: "20px", md: "25px" }}
+              fontWeight="800"
+            >
+              {innterDetails?.heading2}
+            </Text>
           </Card>
           <Box
             color="GrayText"
@@ -62,8 +64,6 @@ const InnerDetails = () => {
         </Box>
       </Box>
       <Footer />
-
-
     </Box>
   );
 };

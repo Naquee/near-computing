@@ -3,7 +3,6 @@ import {
   Box,
   Button,
   Card,
-  Center,
   Flex,
   FormLabel,
   HStack,
@@ -29,7 +28,7 @@ const ContactUs = () => {
   const form = useRef();
 
   return (
-    <Box mt="0rem" w="100%">
+    <Box mt={["5rem", "5rem"]} w="100%">
       <Navbar />
       <Seo
         title="Contact Us"
@@ -43,13 +42,7 @@ const ContactUs = () => {
         flexDir={["column", "row"]}
         ml={["0", "2rem"]}
       >
-        <Card
-          w={["100%", "55%"]}
-          bg="white"
-          color="black"
-          p="1rem"
-          shadow="lg"
-        >
+        <Card w={["100%", "55%"]} bg="white" color="black" p="1rem" shadow="lg">
           <Heading as="h2" size="xl">
             CONTACT US
           </Heading>

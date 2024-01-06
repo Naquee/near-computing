@@ -35,7 +35,7 @@ const ProductShell = () => {
     <>
       <Navbar />
 
-      <Box w={["95%", "95%"]} m="auto" mt="0rem">
+      <Box w={["95%", "95%"]} m="auto" mt={["5rem", "8rem"]}>
 
         <Seo title="Refurbished Laptop" description="Welcome to our Near Computing , if you are looking for old laptop ,second laptop,refurbished laptop,second hand laptop, buy second hand laptop, second hand laptop insurance, second hand laptop store near me, second hand laptop near me s,econd hand laptop price, second hand laptop for sale" />
         <UsedLaptop />

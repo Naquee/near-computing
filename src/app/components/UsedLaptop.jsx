@@ -1,7 +1,6 @@
 import {
   Box,
   Card,
-  CardHeader,
   CardBody,
   CardFooter,
   Stack,
@@ -29,7 +28,7 @@ const UsedLaptop = () => {
         columns={[1, 2, 3]}
         spacing="20px"
         justifyContent="center"
-        w={["95%", "85%"]}
+        w={["95%", "90%"]}
         m="auto"
       >
         {productsell?.map((item, index) => {
@@ -42,7 +41,6 @@ const UsedLaptop = () => {
                   shadow="lg"
                   rounded="lg"
                   boxShadow="outline"
-                  p="6"
                   cursor="pointer"
                   onClick={() => Router.push("/product-sell")}>
                   <CardBody>

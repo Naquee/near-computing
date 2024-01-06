@@ -42,7 +42,7 @@ const TopNav = () => {
                         <Box mt="0.25rem">
                             <BsFillTelephoneFill />
                         </Box>
-                        <a href="tel:9874563217">9871 608 330</a>
+                        <a href="tel:9874563217">+91 9871 608 330</a>
                     </Flex>
                 </Box>
                 <Flex gap="1rem">

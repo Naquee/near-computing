@@ -1,4 +1,4 @@
-import { Box, Center, Divider, Flex, Text } from "@chakra-ui/react";
+import { Box, Divider, Flex, Text } from "@chakra-ui/react";
 import React from "react";
 import { BsFacebook, BsInstagram, BsLinkedin } from "react-icons/bs";
 import Link from "next/link";

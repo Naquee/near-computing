@@ -10,11 +10,13 @@ import Navbar from "../components/Navbar";
 const Repair = () => {
   const router = useRouter();
   return (
-    <Box mt="-5rem">
-      <Box mt={["5rem", "0"]}>
-        <Navbar />
-      </Box>
-      <Seo title="Near Computing" description="Welcome to our Near Computing , " />
+    <Box>
+      <Navbar />
+      <Box mt={["5rem", "8rem"]}></Box>
+      <Seo
+        title="Near Computing"
+        description="Welcome to our Near Computing , "
+      />
       <RepairCard />
       <Footer />
     </Box>

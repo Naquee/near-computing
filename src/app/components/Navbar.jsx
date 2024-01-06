@@ -1,5 +1,5 @@
 "use client";
-import { React, useEffect, useRef, useState } from "react";
+import { React, useRef } from "react";
 import {
   Box,
   Flex,
@@ -18,14 +18,13 @@ import {
 
 import Link from "next/link";
 import { useDisclosure } from "@chakra-ui/react";
-import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
+import { AiOutlineMenu } from "react-icons/ai";
 import { MdArrowDropDown } from "react-icons/md";
 import NClogo from "../../assets/Nlogo.png";
 import Image from "next/image";
 import TopNav from "./TopNav";
 
 const Navbar = () => {
-  const [isHovered, setIsHovered] = useState(false);
   const { isOpen, onOpen, onClose } = useDisclosure();
   const btnRef = useRef();
 

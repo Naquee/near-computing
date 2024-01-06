@@ -1,16 +1,8 @@
 import {
   Box,
-  Button,
-  ButtonGroup,
-  Card,
-  CardBody,
-  CardFooter,
   Center,
-  Divider,
-  Flex,
-  Heading,
-  Stack,
   Text,
+  Flex
 } from "@chakra-ui/react";
 import Image from "next/image";
 import React from "react";

@@ -1,27 +1,13 @@
 import {
   Box,
-  Divider,
-  Heading,
-  Card,
-  keyframes,
-  Center,
   Text,
 } from "@chakra-ui/react";
 import React from "react";
 import hsc from "../../assets/hsc1.jpg";
 import Image from "next/image";
-import TopHeading from "./TopHeading";
-import WhatssApp from "./WhatssApp";
-import { COLORS } from "@/constants/colors";
-import { motion } from "framer-motion";
 import LandingWhatsappCard from "./LandingWhatsappCard";
 
 const LandingCard = () => {
-  const animationKeyframes = keyframes`
-  10% { transform: scale(2); }
-  100% { transform: scale(1); }`;
-
-  const animation = `${animationKeyframes} 1.5s ease-in-out 1`;
   return (
     <Box>
       <Box bg="#2d2a2b" mt={["3rem", "0"]}>
@@ -30,7 +16,7 @@ const LandingCard = () => {
       <Box
         w={["100%", "30%"]}
         pos={["relative", "relative"]}
-        top={["-10rem", "-6rem"]}
+        top={["-9rem", "-6rem"]}
         left={["20%", "3%"]}
         color={["white", "white"]}
         fontWeight="bold"
