@@ -2,9 +2,9 @@ import { Box, Divider, Flex, Text } from "@chakra-ui/react";
 import React from "react";
 import { BsFacebook, BsInstagram, BsLinkedin } from "react-icons/bs";
 import Link from "next/link";
-import NClogo from "../../assets/Nlogo.png";
 import Image from "next/image";
 import whatsapp from "../../assets/whatsapp_icon.svg";
+import Logo from "@/assets/Logo";
 const Footer = () => {
   const handleButtonClick = () => {
     const phoneNumber = "9871608330"; // Replace with the desired phone number
@@ -36,7 +36,8 @@ const Footer = () => {
             {/* <Text fontSize="20px"></Text> */}
             <Box p="0.25rem">
               <Link href="/">
-                <Image src={NClogo} alt="Near Computing" />
+                {/* <Image src={NClogo} alt="Near Computing" /> */}
+                <Logo width={100} height={100}/>
               </Link>
             </Box>
           </Box>

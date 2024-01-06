@@ -15,14 +15,12 @@ import {
   Text,
   Center,
 } from "@chakra-ui/react";
-
 import Link from "next/link";
 import { useDisclosure } from "@chakra-ui/react";
 import { AiOutlineMenu } from "react-icons/ai";
 import { MdArrowDropDown } from "react-icons/md";
-import NClogo from "../../assets/Nlogo.png";
-import Image from "next/image";
 import TopNav from "./TopNav";
+import Logo from "../../assets/Logo";
 
 const Navbar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -100,9 +98,9 @@ const Navbar = () => {
           justifyContent="space-between"
           display={{ base: "none", md: "flex" }}
         >
-          <Box p="0.25rem 0 0.25rem 2rem">
+          <Box>
             <Link href="/">
-              <Image src={NClogo} alt="Near Computing" />
+              <Logo width={80} height={80} />
             </Link>
           </Box>
           <Flex pr="2rem" gap="2rem" pt={5}>
@@ -143,11 +141,11 @@ const Navbar = () => {
           display={{ base: "flex", md: "none" }}
           justifyContent="space-between"
           align="center"
-          p="0.25rem"
+          pr="0.25rem"
         >
-          <Box p="0.25rem">
+          <Box>
             <Link href="/">
-              <Image src={NClogo} alt="Near Computing" />
+              <Logo width={80} height={80} />
             </Link>
           </Box>
 
