@@ -132,7 +132,7 @@ const Footer = () => {
       </Box>
     <Flex w="100%" p="1rem">
     <Box color="white" w="50%" pl={["0rem","2rem"]}  fontSize={{ base: "10px", md: "16px" }}>
-      <a href="https://sydamwebsolutions.com/" target="_blank">Powerd by Sydam Web Solution</a>
+      <a href="https://sydamwebsolutions.com/" target="_blank">Powerd by Sydam Web Solution PVT LTD</a>
       </Box>
     <Box
         w="50%"
