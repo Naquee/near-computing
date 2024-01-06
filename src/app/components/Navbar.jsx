@@ -25,6 +25,7 @@ import Image from "next/image";
 import TopNav from "./TopNav";
 
 const Navbar = () => {
+  const [isHovered, setIsHovered] = useState(false);
   const { isOpen, onOpen, onClose } = useDisclosure();
   const btnRef = useRef();
 
@@ -100,7 +101,7 @@ const Navbar = () => {
           justifyContent="space-between"
           display={{ base: "none", md: "flex" }}
         >
-          <Box p='0.25rem 0 0.25rem 2rem'>
+          <Box p="0.25rem 0 0.25rem 2rem">
             <Link href="/">
               <Image src={NClogo} alt="Near Computing" />
             </Link>
@@ -128,7 +129,11 @@ const Navbar = () => {
                     </MenuList>
                   </Menu>
                 ) : (
-                  <Link href={item.url}>{item.name}</Link>
+                  <Box _hover={{ color: "red.300" }}>
+                    <Link color="red" href={item.url}>
+                      {item.name}
+                    </Link>
+                  </Box>
                 )}
               </Box>
             ))}
@@ -141,7 +146,7 @@ const Navbar = () => {
           align="center"
           p="0.25rem"
         >
-          <Box p='0.25rem'>
+          <Box p="0.25rem">
             <Link href="/">
               <Image src={NClogo} alt="Near Computing" />
             </Link>
@@ -163,7 +168,7 @@ const Navbar = () => {
         finalFocusRef={btnRef}
       >
         <DrawerOverlay />
-        <DrawerContent flexDir="column" >
+        <DrawerContent flexDir="column">
           <DrawerCloseButton />
           <Box
             pr="2rem"
@@ -194,9 +199,11 @@ const Navbar = () => {
                     </MenuList>
                   </Menu>
                 ) : (
-                  <Link onClick={onClose} href={item.url}>
-                    {item.name}
-                  </Link>
+                  <Box _hover={{ color: "red.300" }}>
+                    <Link onClick={onClose} href={item.url}>
+                      {item.name}
+                    </Link>
+                  </Box>
                 )}
               </Center>
             ))}
