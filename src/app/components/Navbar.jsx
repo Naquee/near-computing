@@ -80,6 +80,11 @@ const Navbar = () => {
       url: "/contact-us",
       hasMenu: false,
     },
+        {
+      name: "Blog",
+      url: "/blog",
+      hasMenu: false,
+    },
   ];
 
   return (
