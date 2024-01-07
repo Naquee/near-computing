@@ -1,5 +1,6 @@
 "use client";
 import Footer from "@/app/components/Footer";
+import Navbar from "@/app/components/Navbar";
 import TopHeading from "@/app/components/TopHeading";
 import { rent } from "@/app/services/api";
 import { COLORS } from "@/constants/colors";
@@ -20,7 +21,8 @@ const InnerDetails = () => {
   // console.log("innterDetails", innterDetails);
   return (
     <Box>
-      <Box mt="6rem" w="80%" m="auto">
+      <Navbar />
+      <Box w={["95%","80%"]} m="auto" mt={["5rem","7rem"]}>
         <TopHeading headings={innterDetails.name} />
         <Flex mt="1rem" justifyContent="center">
           <Image
