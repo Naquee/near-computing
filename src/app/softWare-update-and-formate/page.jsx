@@ -15,6 +15,7 @@ import React from "react";
 import software from "../../assets/repair-service/softwareUpdate.jpg";
 
 import Footer from "@/app/components/Footer";
+import Navbar from "../components/Navbar";
 const parag =
   "At Near Computing, we recognize the significance of keeping your devices updated and operating at their best. Our Software Update and Format services are designed to enhance the performance, security, and longevity of your devices.";
 
@@ -53,7 +54,9 @@ let softwareupdate = [
 
 const SoftWareUpdate = () => {
   return (
-    <Box>
+    <>
+    <Navbar/>
+    <Box mt={["5rem","8rem"]}>
       <TopHeading headings="SoftWare Update and Formate" />
       <Box width={{ base: "100%", md: "70%" }} m="auto">
         <Subheading subheading="Welcome to Near Computing – Empowering Your Devices with Optimized Software and Fresh Starts" />
@@ -63,7 +66,6 @@ const SoftWareUpdate = () => {
 
         <TopHeading headings="Our Services:" />
         <Image src={software} alt="Near Computing" width="full" />
-        {/* <img src={""} alt="" /> */}
 
         {softwareupdate.map((item, index) => {
           return (
@@ -87,25 +89,21 @@ const SoftWareUpdate = () => {
           fontSize="20px"
         >
           <ListItem>
-            {" "}
             <strong>Expert Technicians:</strong>Our skilled technicians are
             proficient in software updates, formatting, and device optimization
             across various platforms and devices.
           </ListItem>
           <ListItem>
-            {" "}
             <strong>Personalized Approach:</strong>We understand that each
             device is unique. Our services are tailored to meet your specific
             requirements.
           </ListItem>
           <ListItem>
-            {" "}
             <strong>Thorough Processes:</strong>We ensure meticulous attention
             to detail during updates and formatting, ensuring a seamless
             experience.
           </ListItem>
           <ListItem>
-            {" "}
             <strong>Continued Support:</strong> e provide post-service support
             and guidance to ensure your devices maintain peak performance.
           </ListItem>
@@ -113,6 +111,7 @@ const SoftWareUpdate = () => {
       </Box>
       <Footer />
     </Box>
+    </>
   );
 };
 

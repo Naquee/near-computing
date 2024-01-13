@@ -5,9 +5,10 @@ import TopHeading from "@/app/components/TopHeading";
 import { Box, Flex, Heading, Text } from "@chakra-ui/react";
 import Image from "next/image";
 import React from "react";
-import laptop from "../../assets/repair-service/laptop-repair.jpg"
+import laptop from "../../assets/repair-service/laptop-repair.jpg";
 import Footer from "../components/Footer";
 import Seo from "../components/Seo";
+import Navbar from "../components/Navbar";
 const parag =
   "At our laptop service center, we understand the importance of your laptop in your daily life, whether it's for work, study, or entertainment. Our team of highly skilled technicians is dedicated to providing top-notch laptop services to keep your device running smoothly.";
 
@@ -53,31 +54,42 @@ let lapiservice = [
 
 const MobileReapir = () => {
   return (
-    <Box>
-      <Seo title="Laptop repair" description="Welcome to our Near Computing ,we are provoide repair service like laptop reapair , mobile repair, monitor repair, pc repair " />
-      <TopHeading headings="Laptop Repair Services" />
-      <Box width={{ base: "100%", md: "80%" }} m="auto">
-        <Subheading subheading="Welcome to Our Expert Laptop Service Center!" />
-        <Flex justifyContent="center">
-          <Paragraph width={{ base: "95%", md: "90%" }} para={parag} />
-        </Flex>
+    <>
+      <Navbar />
+      <Box mt={["5rem","8rem"]}>
+        <Seo
+          title="Laptop repair"
+          description="Welcome to our Near Computing ,we are provoide repair service like laptop reapair , mobile repair, monitor repair, pc repair "
+        />
+        <TopHeading headings="Laptop Repair Services" />
+        <Box width={{ base: "100%", md: "80%" }} m="auto">
+          <Subheading subheading="Welcome to Our Expert Laptop Service Center!" />
+          <Flex justifyContent="center">
+            <Paragraph width={{ base: "95%", md: "90%" }} para={parag} />
+          </Flex>
 
-        <TopHeading headings="Our Services:" />
-        <Image src={laptop} alt="Near Computing" width="100%" style={{ objectFit: "cover" }} />
+          <TopHeading headings="Our Services:" />
+          <Image
+            src={laptop}
+            alt="Near Computing"
+            width="100%"
+            style={{ objectFit: "cover" }}
+          />
 
-        {lapiservice.map((item, index) => {
-          return (
-            <Box key={index} p="1rem">
-              <Heading p="0.25rem" as="h4" size="md">
-                {item.head}
-              </Heading>
-              <Text fontSize="18px">{item.title}</Text>
-            </Box>
-          );
-        })}
+          {lapiservice.map((item, index) => {
+            return (
+              <Box key={index} p="1rem">
+                <Heading p="0.25rem" as="h4" size="md">
+                  {item.head}
+                </Heading>
+                <Text fontSize="18px">{item.title}</Text>
+              </Box>
+            );
+          })}
+        </Box>
+        <Footer />
       </Box>
-      <Footer />
-    </Box>
+    </>
   );
 };
 

@@ -24,7 +24,7 @@ const Counter = ({ duration }) => {
   }, [time]);
 
   return (
-    <Box width="50%" m="auto" color="white" boxSizing="border-box">
+    <Box width="50%" m="auto" boxSizing="border-box">
     <br />
       <Heading mt='10rem'>Blog Page is Coming Soon...</Heading>
       <br />

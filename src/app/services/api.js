@@ -256,14 +256,14 @@ const CPU = [
 const productsell = [
   {
     id:1,
-    title:"Used Laptop",
-    description:"Are you in the market for a reliable laptop that won't break the bank? Look no further! Our collection of high-quality, certified used laptops offers the perfect solution for budget-conscious individuals seeking top-notch performance without compromising on reliability.",
+    title:"Refurbished Laptop",
+    description:"Are you in the market for a reliable laptop that won't break the bank? Look no further! Our collection of high-quality, certified Refurbished laptops offers the perfect solution for budget-conscious individuals seeking top-notch performance without compromising on reliability.",
     imgUrl:usedLaptop
   },
   {
     id:2,
-    title:"Used Monitor",
-    description:"Welcome to our online marketplace, where we bring you a curated selection of certified used monitors to redefine your visual experience without breaking the bank. Discover the perfect blend of affordability and performance explore our diverse range of high-quality displays.",
+    title:"Refurbished Monitor",
+    description:"Welcome to our online marketplace, where we bring you a curated selection of certified Refurbished monitors to redefine your visual experience without breaking the bank. Discover the perfect blend of affordability and performance explore our diverse range of high-quality displays.",
     imgUrl:usedMonitor
   },
   {

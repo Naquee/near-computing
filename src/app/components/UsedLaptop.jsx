@@ -22,7 +22,7 @@ const UsedLaptop = () => {
   const Router = useRouter();
   return (
     <Box>
-      <TopHeading headings="SELL OLD PRODUCTS" />
+      <TopHeading headings="SELL REFURBISHED PRODUCTS" />
       <SimpleGrid
         mt={["0", "1rem"]}
         columns={[1, 2, 3]}
