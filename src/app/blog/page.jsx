@@ -52,6 +52,7 @@ const Blog = () => {
           mt="1rem"
           fontWeight="400"
           color="gray.600"
+          fontStyle="italic"
         >
           At Near Computing, we believe in the power of technology to transform
           lives. We've made it our mission to bring you high-quality, reliable,
